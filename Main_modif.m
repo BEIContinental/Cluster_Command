@@ -23,10 +23,10 @@ reducteur = 2; % reducteur reliant EM a l'axe de transmission
 %%
 sim('AxleSplitHEVv6_modif2019', 200)
 
-% figure
-% plot(t,DRI_GBX,t,Boite_ref)
-% legend('driver','ref')
-% title('boite')
+figure
+plot(t,DRI_GBX,t,Boite_ref)
+legend('driver','ref')
+title('boite')
 
 figure
 plot(t,V_ref,t,PLA_SPEED) % Vitesse du véhicule
