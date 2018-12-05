@@ -34,9 +34,9 @@ sim('AxleSplitHEVv6_modif2019', 200)
 % title('vitesse')
 
 figure(4);
-plot(t,DRI_TQ,t,TQ_ICE,t,TQ_elec) % Couples 
+plot(t,DRI_TQ,t,TQ_ICE,t,TQ_EM,t,TQ_global) % Couples 
 title ('couples')
-legend('driver','ice','elec')
+legend('driver','ice','elec','global')
 
 figure(5);
 plot(t,DRI_Brake,t,FA_Brake,t,RA_Brake)
