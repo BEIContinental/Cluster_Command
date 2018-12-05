@@ -46,37 +46,37 @@ legend('driver','ice','elec')
 figure
 plot(t,FA_ICE) % qu'est ce que ça represente
 
-figure; 
+figure 
 plot(t,FA_N_ICE); % vitesse moteur thermique
 xlabel('temps(s)')
 ylabel('vitesse(tr/min)')
 title ('[FA_N_ICE] vitesse moteur therm en sortie de l embrayage n°0')
 
-figure; 
+figure
 plot(t,FA_N_SH); % SH? qu'est ce que c'est?
 xlabel('temps(s)')
 ylabel('vitesse(tr/min)')
 title ('[FA_N_SH]')
 
-figure; 
+figure 
 plot(t,FA_TQ_CLU0_OUT); % couple sortie moteur thermique
 xlabel('temps(s)')
 ylabel('Couple(N/m)')
 title ('[FA_TQ_CLU0_OUT] couple moteur thermique sortie embrayage n°0')
 
-figure; 
+figure
 plot(t,FA_TQ_GBX); % couple sortie GearBox
 xlabel('temps(s)')
 ylabel('Couple(N/m)')
 title ('[FA_TQ_GBX] couple GBX sortie embrayage n°1')
 
-figure; 
+figure
 plot(t,FA_CLU0_STUCK); % qu'est ce donc?
 xlabel('temps(s)')
 ylabel('Unknown')
 title ('[FA_CLU0_STUCK]')
 
-figure; 
+figure
 plot(t,FA_CLU1_STUCK); % qu'est ce donc?
 xlabel('temps(s)')
 ylabel('Unknown')
