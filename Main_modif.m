@@ -23,65 +23,65 @@ reducteur = 2; % reducteur reliant EM a l'axe de transmission
 %%
 sim('AxleSplitHEVv6_modif2019', 200)
 
-% figure(2);
-% plot(t,DRI_GBX,t,Boite_ref)
-% legend('driver','ref')
-% title('boite')
+figure(2);
+plot(t,DRI_GBX,t,Boite_ref)
+legend('driver','ref')
+title('boite')
 
-% figure(3);
-% plot(t,V_ref,t,PLA_SPEED) % Vitesse du véhicule
-% legend('ref','voiture')
-% title('vitesse')
+figure(3);
+plot(t,V_ref,t,PLA_SPEED) % Vitesse du véhicule
+legend('ref','voiture')
+title('vitesse')
 
-figure(4);
-plot(t,DRI_TQ,t,TQ_ICE,t,TQ_EM,t,TQ_global) % Couples 
-title ('couples')
-legend('driver','ice','elec','global')
+% figure(4);
+% plot(t,DRI_TQ,t,TQ_ICE,t,TQ_EM,t,TQ_global) % Couples 
+% title ('Couples')
+% legend('driver','ice','elec','global')
 
 figure(5);
-plot(t,DRI_Brake,t,FA_Brake,t,RA_Brake)
+plot(t,FA_Brake,t,RA_Brake)
 title ('frein demande')
-legend('ref','avant','arriere')
+legend('avant','arriere')
 
 figure(6);
-title(FA_ICE);
 plot(t,FA_ICE) % qu'est ce que ça represente
+title('FA ICE');
 
 figure(7); 
 plot(t,FA_N_ICE); % vitesse moteur thermique
 xlabel('temps(s)')
 ylabel('vitesse(tr/min)')
-title ('[FA_N_ICE] vitesse moteur therm en sortie de l embrayage n°0')
+title ('[FA N ICE] vitesse moteur therm en sortie de l embrayage n°0')
 
 figure(8);
 plot(t,FA_N_SH); % SH? qu'est ce que c'est?
 xlabel('temps(s)')
 ylabel('vitesse(tr/min)')
-title ('[FA_N_SH]')
+title ('[FA N SH]')
 
 figure(9);
 plot(t,FA_TQ_CLU0_OUT); % couple sortie moteur thermique
 xlabel('temps(s)')
 ylabel('Couple(N/m)')
-title ('[FA_TQ_CLU0_OUT] couple moteur thermique sortie embrayage n°0')
+title ('[FA TQ CLU0 OUT] couple moteur thermique sortie embrayage n°0')
 
 figure(10)
 plot(t,FA_TQ_GBX); % couple sortie GearBox
 xlabel('temps(s)')
 ylabel('Couple(N/m)')
-title ('[FA_TQ_GBX] couple GBX sortie embrayage n°1')
+title ('[FA TQ GBX] couple GBX sortie embrayage n°1')
 
 figure(11);
 plot(t,FA_CLU0_STUCK); % qu'est ce donc?
 xlabel('temps(s)')
-ylabel('Unknown')
-title ('[FA_CLU0_STUCK]')
+ylabel('1 = contact, 0 = decouple')
+title ('[FA CLU0 STUCK]')
 
 figure(12);
 plot(t,FA_CLU1_STUCK); % qu'est ce donc?
 xlabel('temps(s)')
-ylabel('Unknown')
-title ('[FA_CLU1_STUCK]')
+ylabel('1 = contact, 0 = decouple')
+title ('[FA CLU1 STUCK]')
 
 
 
