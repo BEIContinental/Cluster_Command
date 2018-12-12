@@ -1,0 +1,7 @@
+-pourquoi la commande a cette tête là: HEV model->Command->Command - Clutch1 to FA1
+
+-pourquoi la sortie du clutch est booléenne et non pas continue et ce même en prenant en compte les glissement
+
+-HEV model -> Front Axle -> CLUTCH -> clutch1: en sortie du bloc jaune on a la consigne du clutch ou on a la sortie effective du clutch
+
+
