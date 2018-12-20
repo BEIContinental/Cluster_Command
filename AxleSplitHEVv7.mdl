@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.1798"
+    ComputedModelVersion    "1.1802"
     NumModelReferences	    0
     NumTestPointedSignals   1
     TestPointedSignal {
@@ -25,7 +25,7 @@ Model {
     PreCompExecutionDomainType "Unset"
     IsExportFunctionModel   0
     NumParameterArguments   0
-    NumExternalFileReferences 21
+    NumExternalFileReferences 15
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
       Path		      "AxleSplitHEVv7/HEV model/Command/Command - Clutch To FA/Compare To Constant"
@@ -72,42 +72,6 @@ Model {
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      Path		      "AxleSplitHEVv7/HEV model/Driver1/Clutch command/Clutch Stuck/Compare To Constant"
-      SID		      "6989"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      Path		      "AxleSplitHEVv7/HEV model/Driver1/Clutch command/Clutch Stuck/Compare To Constant1"
-      SID		      "6990"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      Path		      "AxleSplitHEVv7/HEV model/Driver1/Clutch command/Clutch Stuck/Compare To Constant3"
-      SID		      "6991"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      Path		      "AxleSplitHEVv7/HEV model/Driver1/Clutch command/Clutch Stuck/Compare To Constant4"
-      SID		      "6992"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "simulink/Discontinuities/Rate Limiter\nDynamic"
-      Path		      "AxleSplitHEVv7/HEV model/Driver1/Clutch command/Clutch Stuck/Rate Limiter Dynamic"
-      SID		      "6998"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "simulink_extras/Flip Flops/S-R\nFlip-Flop"
-      Path		      "AxleSplitHEVv7/HEV model/Driver1/Clutch command/Clutch Stuck/S-R Flip-Flop"
-      SID		      "6999"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
       Path		      "AxleSplitHEVv7/HEV model/Driver1/Driver/Compare To Constant"
       SID		      "8501"
       Type		      "LIBRARY_BLOCK"
@@ -116,6 +80,12 @@ Model {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
       Path		      "AxleSplitHEVv7/HEV model/Front Axle/Clutch/Stuck logic/Compare To Constant"
       SID		      "8020"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Discontinuities/Saturation\nDynamic"
+      Path		      "AxleSplitHEVv7/HEV model/Front Axle/Electrical machine/Engine representation/Saturation Dynamic"
+      SID		      "9260"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
@@ -148,12 +118,6 @@ Model {
       SID		      "8336"
       Type		      "LIBRARY_BLOCK"
     }
-    ExternalFileReference {
-      Reference		      "simulink/Discontinuities/Saturation\nDynamic"
-      Path		      "AxleSplitHEVv7/HEV model/Rear Axle1/Electrical machine/Engine representation/Saturation Dynamic"
-      SID		      "8951"
-      Type		      "LIBRARY_BLOCK"
-    }
     OrderedModelArguments   1
   }
   DiagnosticSuppressor	  "on"
@@ -181,7 +145,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-8.0, -8.0, 1318.0, 784.0]
+      Location		      [-4.0, 0.0, 1318.0, 784.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -204,10 +168,10 @@ Model {
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
 	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"7980"
+	LoadSaveID		"7718"
 	Extents			[1264.0, 603.0]
-	ZoomFactor		[0.8]
-	Offset			[-278.2903624103501, 455.27704966924057]
+	ZoomFactor		[0.59999999999999987]
+	Offset			[185.49105122895503, 254.65235003482738]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -241,9 +205,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "test"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Nov 20 17:25:54 2018"
-  RTWModifiedTimeStamp	  464635493
-  ModelVersionFormat	  "1.%<AutoIncrement:1798>"
+  LastModifiedDate	  "Thu Dec 20 10:56:05 2018"
+  RTWModifiedTimeStamp	  467202936
+  ModelVersionFormat	  "1.%<AutoIncrement:1802>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1906,7 +1870,7 @@ Model {
   }
   System {
     Name		    "AxleSplitHEVv7"
-    Location		    [644, 0, 1309, 775]
+    Location		    [-8, -8, 1310, 776]
     Open		    off
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
@@ -1923,7 +1887,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "150"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "9226"
+    SIDHighWatermark	    "9354"
     Block {
       BlockType		      SubSystem
       Name		      "HEV model"
@@ -1949,16 +1913,16 @@ Model {
 	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"30"
 	Block {
 	  BlockType		  BusCreator
 	  Name			  "Bus\nCreator"
 	  SID			  "8515"
-	  Ports			  [6, 1]
-	  Position		  [1380, 292, 1390, 528]
+	  Ports			  [10, 1]
+	  Position		  [1380, 294, 1385, 771]
 	  ZOrder		  399
 	  ShowName		  off
-	  Inputs		  "6"
+	  Inputs		  "10"
 	  DisplayOption		  "bar"
 	  InheritFromInputs	  on
 	  Port {
@@ -1968,29 +1932,13 @@ Model {
 	}
 	Block {
 	  BlockType		  BusCreator
-	  Name			  "Bus\nCreator1"
-	  SID			  "8893"
-	  Ports			  [4, 1]
-	  Position		  [1380, 598, 1390, 832]
-	  ZOrder		  413
-	  ShowName		  off
-	  Inputs		  "4"
-	  DisplayOption		  "bar"
-	  InheritFromInputs	  on
-	  Port {
-	    PortNumber		    1
-	    Name		    "IB_RA"
-	  }
-	}
-	Block {
-	  BlockType		  BusCreator
 	  Name			  "Bus\nCreator2"
 	  SID			  "9018"
-	  Ports			  [5, 1]
-	  Position		  [1380, 1095, 1390, 1355]
+	  Ports			  [3, 1]
+	  Position		  [1380, 1103, 1390, 1367]
 	  ZOrder		  415
 	  ShowName		  off
-	  Inputs		  "5"
+	  Inputs		  "3"
 	  DisplayOption		  "bar"
 	  InheritFromInputs	  on
 	  Port {
@@ -2051,7 +1999,7 @@ Model {
 	  Name			  "Bus\nSelector"
 	  SID			  "8544"
 	  Ports			  [1, 5]
-	  Position		  [1795, 291, 1805, 529]
+	  Position		  [1800, 293, 1805, 567]
 	  ZOrder		  401
 	  ShowName		  off
 	  OutputSignals		  "FA_GAS_CONSUMPTION,FA_TQ_MINMAX,FA_TQ,FA_N_ICE,FA_PLA_BRAKE"
@@ -2075,37 +2023,6 @@ Model {
 	  Port {
 	    PortNumber		    5
 	    Name		    "<FA_PLA_BRAKE>"
-	  }
-	}
-	Block {
-	  BlockType		  BusSelector
-	  Name			  "Bus\nSelector1"
-	  SID			  "8894"
-	  Ports			  [1, 5]
-	  Position		  [1795, 593, 1805, 837]
-	  ZOrder		  414
-	  ShowName		  off
-	  OutputSignals		  "RA_TQ,RA_TQ_MINMAX,RA_EM_CURRENT,RA_N_EM,RA_PLA_F_BRAKE"
-	  OutputAsBus		  off
-	  Port {
-	    PortNumber		    1
-	    Name		    "<RA_TQ>"
-	  }
-	  Port {
-	    PortNumber		    2
-	    Name		    "<RA_TQ_MINMAX>"
-	  }
-	  Port {
-	    PortNumber		    3
-	    Name		    "<RA_EM_CURRENT>"
-	  }
-	  Port {
-	    PortNumber		    4
-	    Name		    "<RA_N_EM>"
-	  }
-	  Port {
-	    PortNumber		    5
-	    Name		    "<RA_PLA_F_BRAKE>"
 	  }
 	}
 	Block {
@@ -2262,8 +2179,8 @@ Model {
 	  }
 	  System {
 	    Name		    "Command"
-	    Location		    [-8, -8, 1310, 776]
-	    Open		    off
+	    Location		    [-4, 0, 1314, 784]
+	    Open		    on
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
 	    ExecutionDomainType	    "Deduce"
@@ -2302,7 +2219,7 @@ Model {
 	      RequestExecContextInheritance off
 	      System {
 		Name			"Braking_repartition"
-		Location		[-8, 0, 1362, 744]
+		Location		[-8, -8, 1310, 776]
 		Open			off
 		PortBlocksUseCompactNotation off
 		SetExecutionDomain	off
@@ -2317,7 +2234,7 @@ Model {
 		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"60"
+		ZoomFactor		"100"
 		Block {
 		  BlockType		  Inport
 		  Name			  "DRI_CMD_BRAKE"
@@ -3223,7 +3140,7 @@ Model {
 	      RequestExecContextInheritance off
 	      System {
 		Name			"Command - Torque towheel->torque to clutch conversion FA"
-		Location		[644, 0, 1309, 775]
+		Location		[-8, -8, 1310, 776]
 		Open			off
 		PortBlocksUseCompactNotation off
 		SetExecutionDomain	off
@@ -3595,7 +3512,7 @@ Model {
 	      RequestExecContextInheritance off
 	      System {
 		Name			"Command - Torque towheel->torque to clutch conversion RA"
-		Location		[-8, -8, 1374, 736]
+		Location		[-8, -8, 1310, 776]
 		Open			off
 		PortBlocksUseCompactNotation off
 		SetExecutionDomain	off
@@ -4554,7 +4471,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto17"
 	      SID		      "9130"
-	      Position		      [1780, 942, 1960, 968]
+	      Position		      [1785, 942, 1965, 968]
 	      ZOrder		      326
 	      GotoTag		      "CMD_FA_MECHANICAL_BRAKE"
 	    }
@@ -4672,7 +4589,7 @@ Model {
 	      RequestExecContextInheritance off
 	      System {
 		Name			"Start_Stop"
-		Location		[-8, -8, 1310, 776]
+		Location		[-4, 0, 1314, 784]
 		Open			off
 		PortBlocksUseCompactNotation off
 		SetExecutionDomain	off
@@ -4687,7 +4604,7 @@ Model {
 		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"80"
+		ZoomFactor		"100"
 		Block {
 		  BlockType		  Inport
 		  Name			  "DRI_CLUTCH_SP"
@@ -4778,7 +4695,7 @@ Model {
 		  SFBlockType		  "Chart"
 		  System {
 		    Name		    "START/STOP 1"
-		    Location		    [-8, -8, 1310, 776]
+		    Location		    [-4, 0, 1314, 784]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
 		    SetExecutionDomain	    off
@@ -4832,7 +4749,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[2 3]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -4927,7 +4844,7 @@ Model {
 		  RequestExecContextInheritance	off
 		  System {
 		    Name		    "startstop prototype"
-		    Location		    [-8, -8, 1928, 1048]
+		    Location		    [-8, -8, 1310, 776]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
 		    SetExecutionDomain	    off
@@ -4942,7 +4859,7 @@ Model {
 		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
-		    ZoomFactor		    "187"
+		    ZoomFactor		    "100"
 		    Block {
 		    BlockType		    Inport
 		    Name		    "PLA_N"
@@ -5208,7 +5125,7 @@ Model {
 		  ZOrder		  5
 		  SrcBlock		  "startstop prototype"
 		  SrcPort		  1
-		  Points		  [108, 0; 0, 5]
+		  Points		  [0, 5]
 		  DstBlock		  "Logical\nOperator"
 		  DstPort		  1
 		}
@@ -5318,7 +5235,7 @@ Model {
 	      BlockType		      SubSystem
 	      Name		      "Torque repartition"
 	      SID		      "7858"
-	      Ports		      [7, 4]
+	      Ports		      [6, 4]
 	      Position		      [740, 349, 980, 591]
 	      ZOrder		      86
 	      BackgroundColor	      "green"
@@ -5371,20 +5288,11 @@ Model {
 		}
 		Block {
 		  BlockType		  Inport
-		  Name			  "RA_TQ_MINMAX"
-		  SID			  "7862"
-		  Position		  [270, 478, 300, 492]
-		  ZOrder		  130
-		  Port			  "4"
-		  IconDisplay		  "Port number"
-		}
-		Block {
-		  BlockType		  Inport
 		  Name			  "SYSE_TQ_MINMAX"
 		  SID			  "7863"
 		  Position		  [280, 373, 310, 387]
 		  ZOrder		  129
-		  Port			  "5"
+		  Port			  "4"
 		  IconDisplay		  "Port number"
 		}
 		Block {
@@ -5393,7 +5301,7 @@ Model {
 		  SID			  "7864"
 		  Position		  [850, 593, 880, 607]
 		  ZOrder		  136
-		  Port			  "6"
+		  Port			  "5"
 		  IconDisplay		  "Port number"
 		}
 		Block {
@@ -5402,7 +5310,7 @@ Model {
 		  SID			  "7865"
 		  Position		  [745, 628, 775, 642]
 		  ZOrder		  171
-		  Port			  "7"
+		  Port			  "6"
 		  IconDisplay		  "Port number"
 		}
 		Block {
@@ -5415,25 +5323,6 @@ Model {
 		  InputSameDT		  off
 		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
 		  SaturateOnIntegerOverflow off
-		}
-		Block {
-		  BlockType		  BusSelector
-		  Name			  "Bus\nSelector"
-		  SID			  "7867"
-		  Ports			  [1, 2]
-		  Position		  [360, 449, 365, 516]
-		  ZOrder		  128
-		  ShowName		  off
-		  OutputSignals		  "RA_TQ_MAX,RA_TQ_MIN"
-		  OutputAsBus		  off
-		  Port {
-		    PortNumber		    1
-		    Name		    "<RA_TQ_MAX>"
-		  }
-		  Port {
-		    PortNumber		    2
-		    Name		    "<RA_TQ_MIN>"
-		  }
 		}
 		Block {
 		  BlockType		  BusSelector
@@ -5481,33 +5370,6 @@ Model {
 		  ZOrder		  50
 		  BlockRotation		  270
 		  ShowName		  off
-		}
-		Block {
-		  BlockType		  MinMax
-		  Name			  "MinMax1"
-		  SID			  "7871"
-		  Ports			  [2, 1]
-		  Position		  [545, 542, 575, 573]
-		  ZOrder		  126
-		  ShowName		  off
-		  Function		  "max"
-		  Inputs		  "2"
-		  InputSameDT		  off
-		  SaturateOnIntegerOverflow off
-		  SampleTime		  "hev_dt"
-		}
-		Block {
-		  BlockType		  MinMax
-		  Name			  "MinMax2"
-		  SID			  "7872"
-		  Ports			  [2, 1]
-		  Position		  [480, 457, 510, 488]
-		  ZOrder		  134
-		  ShowName		  off
-		  Inputs		  "2"
-		  InputSameDT		  off
-		  SaturateOnIntegerOverflow off
-		  SampleTime		  "hev_dt"
 		}
 		Block {
 		  BlockType		  SubSystem
@@ -6442,7 +6304,7 @@ Model {
 		    BlockType		    Inport
 		    Name		    "PLA_N"
 		    SID			    "7922"
-		    Position		    [70, 425, 100, 440]
+		    Position		    [85, 445, 115, 460]
 		    ZOrder		    179
 		    BlockRotation	    270
 		    BlockMirror		    on
@@ -6579,7 +6441,7 @@ Model {
 		    ZOrder		    2
 		    SrcBlock		    "PLA_N"
 		    SrcPort		    1
-		    Points		    [0, 30]
+		    Points		    [0, 10]
 		    DstBlock		    "Gain"
 		    DstPort		    1
 		    }
@@ -6734,34 +6596,11 @@ Model {
 		  DstPort		  2
 		}
 		Line {
-		  ZOrder		  8
-		  SrcBlock		  "MinMax2"
-		  SrcPort		  1
-		  Points		  [52, 0; 0, 45]
-		  DstBlock		  "Optimization Algorithm "
-		  DstPort		  3
-		}
-		Line {
-		  ZOrder		  9
-		  SrcBlock		  "MinMax1"
-		  SrcPort		  1
-		  Points		  [233, 0; 0, -20]
-		  DstBlock		  "Optimization Algorithm "
-		  DstPort		  4
-		}
-		Line {
 		  ZOrder		  10
 		  SrcBlock		  "Constant2"
 		  SrcPort		  1
 		  DstBlock		  "Sum1"
 		  DstPort		  2
-		}
-		Line {
-		  ZOrder		  11
-		  SrcBlock		  "RA_TQ_MINMAX"
-		  SrcPort		  1
-		  DstBlock		  "Bus\nSelector"
-		  DstPort		  1
 		}
 		Line {
 		  ZOrder		  12
@@ -6772,42 +6611,23 @@ Model {
 		}
 		Line {
 		  Name			  "<SYSE_TQ_MIN>"
-		  ZOrder		  13
+		  ZOrder		  43
 		  Labels		  [0, 0]
 		  SrcBlock		  "Bus\nSelector2"
 		  SrcPort		  1
-		  Points		  [151, 0; 0, 190]
-		  DstBlock		  "MinMax1"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "<RA_TQ_MIN>"
-		  ZOrder		  14
-		  Labels		  [0, 0]
-		  SrcBlock		  "Bus\nSelector"
-		  SrcPort		  2
-		  Points		  [161, 0; 0, 65]
-		  DstBlock		  "MinMax1"
-		  DstPort		  2
-		}
-		Line {
-		  Name			  "<RA_TQ_MAX>"
-		  ZOrder		  15
-		  Labels		  [0, 0]
-		  SrcBlock		  "Bus\nSelector"
-		  SrcPort		  1
-		  DstBlock		  "MinMax2"
-		  DstPort		  1
+		  Points		  [197, 0; 0, 180]
+		  DstBlock		  "Optimization Algorithm "
+		  DstPort		  4
 		}
 		Line {
 		  Name			  "<SYSE_TQ_MAX>"
-		  ZOrder		  16
+		  ZOrder		  42
 		  Labels		  [0, 0]
 		  SrcBlock		  "Bus\nSelector2"
 		  SrcPort		  2
-		  Points		  [82, 0; 0, 85]
-		  DstBlock		  "MinMax2"
-		  DstPort		  2
+		  Points		  [73, 0; 0, 125]
+		  DstBlock		  "Optimization Algorithm "
+		  DstPort		  3
 		}
 		Line {
 		  ZOrder		  17
@@ -6973,17 +6793,17 @@ Model {
 	      }
 	      Branch {
 		ZOrder			4
-		Points			[0, 27; -294, 0; 0, 308]
+		Points			[0, 27; -294, 0; 0, 303]
 		Branch {
-		  ZOrder		  5
-		  Points		  [0, 268; 619, 0; 0, 72]
+		  ZOrder		  289
+		  Points		  [0, 273; 619, 0; 0, 72]
 		  DstBlock		  "Braking_repartition"
 		  DstPort		  2
 		}
 		Branch {
 		  ZOrder		  6
 		  DstBlock		  "Torque repartition"
-		  DstPort		  7
+		  DstPort		  6
 		}
 	      }
 	    }
@@ -7157,7 +6977,7 @@ Model {
 	      ZOrder		      169
 	      SrcBlock		      "From8"
 	      SrcPort		      1
-	      Points		      [48, 0; 0, -190]
+	      Points		      [48, 0; 0, -175]
 	      DstBlock		      "Torque repartition"
 	      DstPort		      3
 	    }
@@ -7165,18 +6985,8 @@ Model {
 	      ZOrder		      28
 	      SrcBlock		      "Delay"
 	      SrcPort		      1
-	      Points		      [29, 0]
-	      Branch {
-		ZOrder			29
-		DstBlock		"Bus\nSelector"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			30
-		Points			[0, -480]
-		DstBlock		"Torque repartition"
-		DstPort			4
-	      }
+	      DstBlock		      "Bus\nSelector"
+	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      31
@@ -7190,9 +7000,9 @@ Model {
 	      }
 	      Branch {
 		ZOrder			33
-		Points			[0, -375]
+		Points			[0, -390]
 		DstBlock		"Torque repartition"
-		DstPort			5
+		DstPort			4
 	      }
 	    }
 	    Line {
@@ -7254,7 +7064,7 @@ Model {
 	      }
 	      Branch {
 		ZOrder			45
-		Points			[-225, 0; 0, -285]
+		Points			[-225, 0; 0, -275]
 		DstBlock		"Torque repartition"
 		DstPort			2
 	      }
@@ -7335,7 +7145,7 @@ Model {
 	      Branch {
 		ZOrder			58
 		DstBlock		"Torque repartition"
-		DstPort			6
+		DstPort			5
 	      }
 	    }
 	    Line {
@@ -7371,6 +7181,7 @@ Model {
 	      ZOrder		      63
 	      SrcBlock		      "Demux"
 	      SrcPort		      2
+	      Points		      [296, 0; 0, 5]
 	      DstBlock		      "Torque repartition"
 	      DstPort		      1
 	    }
@@ -7586,6 +7397,14 @@ Model {
 	      DstPort		      7
 	    }
 	    Annotation {
+	      SID		      "9349"
+	      Name		      "ici qu'on va faire nos changements de commande"
+	      Position		      [1700, 77, 1921, 91]
+	      InternalMargins	      [0, 0, 0, 0]
+	      HorizontalAlignment     "left"
+	      VerticalAlignment	      "top"
+	    }
+	    Annotation {
 	      SID		      "9134"
 	      Name		      "BUSArea"
 	      Position		      [-1130, 147, -490, 1190]
@@ -7598,7 +7417,7 @@ Model {
 	      BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
 	      DropShadow	      on
 	      AnnotationType	      "area_annotation"
-	      ZOrder		      6
+	      ZOrder		      9
 	      FontName		      "Arial"
 	      FontSize		      12
 	    }
@@ -7657,7 +7476,7 @@ Model {
 	  }
 	  System {
 	    Name		    "Driver1"
-	    Location		    [644, 0, 1309, 775]
+	    Location		    [-8, -8, 1310, 776]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
@@ -7672,7 +7491,7 @@ Model {
 	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
+	    ZoomFactor		    "80"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Input_Bus_Driver1"
@@ -7741,6 +7560,7 @@ Model {
 	      Position		      [960, 219, 1170, 326]
 	      ZOrder		      7
 	      BackgroundColor	      "green"
+	      Commented		      "on"
 	      RequestExecContextInheritance off
 	      System {
 		Name			"Clutch command"
@@ -7940,7 +7760,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[3 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -8087,7 +7907,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[3 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -8951,12 +8771,20 @@ Model {
 	      }
 	    }
 	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "9345"
+	      Position		      [1490, 285, 1520, 315]
+	      ZOrder		      297
+	    }
+	    Block {
 	      BlockType		      Delay
 	      Name		      "Delay"
 	      SID		      "7043"
 	      Ports		      [1, 1]
 	      Position		      [895, 283, 930, 317]
 	      ZOrder		      129
+	      Commented		      "on"
 	      InputPortMap	      "u0"
 	      DelayLength	      "1"
 	    }
@@ -9381,6 +9209,7 @@ Model {
 	      SID		      "9152"
 	      Position		      [570, 288, 660, 312]
 	      ZOrder		      275
+	      Commented		      "on"
 	      GotoTag		      "FA_N_ICE"
 	    }
 	    Block {
@@ -9389,6 +9218,7 @@ Model {
 	      SID		      "9153"
 	      Position		      [570, 231, 695, 259]
 	      ZOrder		      276
+	      Commented		      "on"
 	      GotoTag		      "DRI_REF_GBX"
 	    }
 	    Block {
@@ -9510,6 +9340,7 @@ Model {
 	      SID		      "9157"
 	      Position		      [1370, 232, 1500, 258]
 	      ZOrder		      280
+	      Commented		      "on"
 	      GotoTag		      "DRI_GBX_SP"
 	    }
 	    Block {
@@ -9660,13 +9491,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      16
-	      SrcBlock		      "Clutch command"
-	      SrcPort		      2
-	      DstBlock		      "Product"
-	      DstPort		      2
-	    }
-	    Line {
 	      ZOrder		      12
 	      SrcBlock		      "Delay"
 	      SrcPort		      1
@@ -9796,6 +9620,19 @@ Model {
 	      DstBlock		      "Bus\nCreator"
 	      DstPort		      5
 	    }
+	    Line {
+	      ZOrder		      67
+	      SrcBlock		      "Clutch command"
+	      SrcPort		      2
+	      Points		      [136, 0]
+	    }
+	    Line {
+	      ZOrder		      68
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
 	    Annotation {
 	      SID		      "9171"
 	      Name		      "BusArea"
@@ -9809,7 +9646,7 @@ Model {
 	      BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
 	      DropShadow	      on
 	      AnnotationType	      "area_annotation"
-	      ZOrder		      4
+	      ZOrder		      7
 	      FontName		      "Arial"
 	      FontSize		      12
 	    }
@@ -13227,7 +13064,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From"
 	  SID			  "7965"
-	  Position		  [1020, 335, 1205, 365]
+	  Position		  [1020, 360, 1205, 390]
 	  ZOrder		  375
 	  ForegroundColor	  "darkGreen"
 	  ShowName		  off
@@ -13259,6 +13096,7 @@ Model {
 	  ZOrder		  372
 	  ForegroundColor	  "orange"
 	  ShowName		  off
+	  Commented		  "on"
 	  GotoTag		  "RA_TQ"
 	  Port {
 	    PortNumber		    1
@@ -13311,7 +13149,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From16"
 	  SID			  "7970"
-	  Position		  [1025, 1208, 1230, 1242]
+	  Position		  [1025, 1203, 1230, 1237]
 	  ZOrder		  370
 	  ForegroundColor	  "darkGreen"
 	  ShowName		  off
@@ -13326,7 +13164,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From17"
 	  SID			  "7971"
-	  Position		  [1020, 297, 1205, 323]
+	  Position		  [1020, 317, 1205, 343]
 	  ZOrder		  369
 	  ForegroundColor	  "darkGreen"
 	  ShowName		  off
@@ -13354,7 +13192,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From2"
 	  SID			  "8895"
-	  Position		  [1020, 614, 1130, 636]
+	  Position		  [1020, 589, 1130, 611]
 	  ZOrder		  409
 	  ForegroundColor	  "orange"
 	  ShowName		  off
@@ -13412,7 +13250,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From23"
 	  SID			  "7974"
-	  Position		  [1020, 376, 1205, 404]
+	  Position		  [1020, 406, 1205, 434]
 	  ZOrder		  366
 	  ForegroundColor	  "darkGreen"
 	  ShowName		  off
@@ -13469,7 +13307,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From27"
 	  SID			  "7975"
-	  Position		  [1020, 418, 1205, 442]
+	  Position		  [1020, 453, 1205, 477]
 	  ZOrder		  376
 	  ForegroundColor	  "darkGreen"
 	  ShowName		  off
@@ -13484,7 +13322,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From28"
 	  SID			  "7976"
-	  Position		  [1020, 495, 1205, 525]
+	  Position		  [1020, 540, 1205, 570]
 	  ZOrder		  379
 	  ForegroundColor	  "darkGreen"
 	  ShowName		  off
@@ -13530,6 +13368,7 @@ Model {
 	  ZOrder		  380
 	  ForegroundColor	  "darkGreen"
 	  ShowName		  off
+	  Commented		  "on"
 	  GotoTag		  "RA_PLA_F_BRAKE"
 	  Port {
 	    PortNumber		    1
@@ -13540,7 +13379,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From32"
 	  SID			  "8896"
-	  Position		  [1020, 731, 1145, 759]
+	  Position		  [1015, 676, 1140, 704]
 	  ZOrder		  408
 	  ForegroundColor	  "orange"
 	  ShowName		  off
@@ -13555,7 +13394,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From33"
 	  SID			  "8897"
-	  Position		  [1020, 671, 1130, 699]
+	  Position		  [1020, 631, 1130, 659]
 	  ZOrder		  407
 	  ForegroundColor	  "darkGreen"
 	  ShowName		  off
@@ -13569,7 +13408,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From34"
 	  SID			  "8898"
-	  Position		  [1020, 793, 1205, 817]
+	  Position		  [1015, 723, 1200, 747]
 	  ZOrder		  411
 	  ForegroundColor	  "darkGreen"
 	  ShowName		  off
@@ -13611,7 +13450,7 @@ Model {
 	  BlockType		  From
 	  Name			  "From6"
 	  SID			  "7979"
-	  Position		  [1025, 1311, 1135, 1339]
+	  Position		  [1025, 1316, 1135, 1344]
 	  ZOrder		  365
 	  ForegroundColor	  "orange"
 	  ShowName		  off
@@ -13670,7 +13509,7 @@ Model {
 	  Name			  "Front Axle"
 	  SID			  "7980"
 	  Ports			  [1, 1]
-	  Position		  [1435, 293, 1750, 527]
+	  Position		  [1435, 297, 1750, 533]
 	  ZOrder		  378
 	  BackgroundColor	  "yellow"
 	  RequestExecContextInheritance	off
@@ -13682,7 +13521,7 @@ Model {
 	  System {
 	    Name		    "Front Axle"
 	    Location		    [-8, -8, 1310, 776]
-	    Open		    on
+	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
 	    ExecutionDomainType	    "Deduce"
@@ -13701,7 +13540,7 @@ Model {
 	      BlockType		      Inport
 	      Name		      "Input_Bus_Front_Axle"
 	      SID		      "8514"
-	      Position		      [-545, 428, -515, 442]
+	      Position		      [-1005, 508, -975, 522]
 	      ZOrder		      49
 	      IconDisplay	      "Port number"
 	      Port {
@@ -13715,7 +13554,7 @@ Model {
 	      Name		      "Bus\nCreator"
 	      SID		      "7987"
 	      Ports		      [2, 1]
-	      Position		      [2055, 510, 2060, 590]
+	      Position		      [2805, 510, 2810, 590]
 	      ZOrder		      -6
 	      ShowName		      off
 	      Inputs		      "2"
@@ -13742,11 +13581,11 @@ Model {
 	      BlockType		      BusCreator
 	      Name		      "Bus\nCreator2"
 	      SID		      "8532"
-	      Ports		      [5, 1]
-	      Position		      [-100, 626, -90, 844]
+	      Ports		      [10, 1]
+	      Position		      [-570, 853, -560, 1377]
 	      ZOrder		      66
 	      ShowName		      off
-	      Inputs		      "5"
+	      Inputs		      "10"
 	      DisplayOption	      "bar"
 	      InheritFromInputs	      on
 	      Port {
@@ -13759,7 +13598,7 @@ Model {
 	      Name		      "Bus\nCreator3"
 	      SID		      "8577"
 	      Ports		      [4, 1]
-	      Position		      [1340, 486, 1345, 819]
+	      Position		      [2090, 486, 2095, 819]
 	      ZOrder		      93
 	      ShowName		      off
 	      Inputs		      "4"
@@ -13771,8 +13610,8 @@ Model {
 	      Name		      "Bus\nCreator4"
 	      SID		      "8594"
 	      Ports		      [4, 1]
-	      Position		      [305, 703, 310, 857]
-	      ZOrder		      95
+	      Position		      [130, 1078, 135, 1232]
+	      ZOrder		      143
 	      Inputs		      "4"
 	      DisplayOption	      "bar"
 	      InheritFromInputs	      on
@@ -13782,14 +13621,31 @@ Model {
 	      }
 	    }
 	    Block {
+	      BlockType		      BusCreator
+	      Name		      "Bus\nCreator7"
+	      SID		      "9232"
+	      Ports		      [3, 1]
+	      Position		      [260, 738, 265, 892]
+	      ZOrder		      128
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	      InheritFromInputs	      on
+	      Port {
+		PortNumber		1
+		Name			"IB_EM"
+	      }
+	    }
+	    Block {
 	      BlockType		      BusSelector
 	      Name		      "Bus\nSelector"
 	      SID		      "8517"
-	      Ports		      [1, 6]
-	      Position		      [-475, 280, -465, 590]
+	      Ports		      [1, 9]
+	      Position		      [-910, 227, -905, 803]
 	      ZOrder		      50
 	      ShowName		      off
-	      OutputSignals	      "CMD_FA_TQ_SP,DRI_GBX_SP,CMD_CLUTCH_SP,FA_START_ICE,PLA_N,CMD_FA_MECHANICAL_BRAKE"
+	      OutputSignals	      "CMD_FA_TQ_SP,DRI_GBX_SP,CMD_CLUTCH_SP,FA_START_ICE,PLA_N,CMD_FA_MECHANICAL_BRAKE,CMD_FA_ME"
+	      "CHANICAL_BRAKE (signal 6),SYSE_VOLTAGE_HV (signal 9),CMD_RA_TQ_SP (signal 8)"
 	      OutputAsBus	      off
 	      Port {
 		PortNumber		1
@@ -13815,14 +13671,26 @@ Model {
 		PortNumber		6
 		Name			"<CMD_FA_MECHANICAL_BRAKE>"
 	      }
+	      Port {
+		PortNumber		7
+		Name			"<CMD_FA_MECHANICAL_BRAKE (signal 6)>"
+	      }
+	      Port {
+		PortNumber		8
+		Name			"<SYSE_VOLTAGE_HV (signal 9)>"
+	      }
+	      Port {
+		PortNumber		9
+		Name			"<CMD_RA_TQ_SP (signal 8)>"
+	      }
 	    }
 	    Block {
 	      BlockType		      BusSelector
 	      Name		      "Bus\nSelector1"
 	      SID		      "8555"
 	      Ports		      [1, 3]
-	      Position		      [745, 702, 750, 858]
-	      ZOrder		      78
+	      Position		      [570, 1077, 575, 1233]
+	      ZOrder		      139
 	      ShowName		      off
 	      OutputSignals	      "FA_N_ICE,FA_TQ_CLU,FA_CLU_STUCK"
 	      OutputAsBus	      off
@@ -13844,7 +13712,7 @@ Model {
 	      Name		      "Bus\nSelector2"
 	      SID		      "8569"
 	      Ports		      [1, 2]
-	      Position		      [1760, 488, 1765, 817]
+	      Position		      [2510, 488, 2515, 817]
 	      ZOrder		      85
 	      ShowName		      off
 	      OutputSignals	      "FA_TQ_AND_MINMAX,FA_N_GBX"
@@ -13890,12 +13758,39 @@ Model {
 	      }
 	    }
 	    Block {
+	      BlockType		      BusSelector
+	      Name		      "Bus\nSelector5"
+	      SID		      "9234"
+	      Ports		      [1, 4]
+	      Position		      [715, 737, 720, 888]
+	      ZOrder		      126
+	      ShowName		      off
+	      OutputSignals	      "RA_EM_CURRENT,RA_TQ_ME,RA_TQ_MIN_ME,RA_TQ_MAX_ME"
+	      OutputAsBus	      off
+	      Port {
+		PortNumber		1
+		Name			"<RA_EM_CURRENT>"
+	      }
+	      Port {
+		PortNumber		2
+		Name			"<RA_TQ_ME>"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"<RA_TQ_MIN_ME>"
+	      }
+	      Port {
+		PortNumber		4
+		Name			"<RA_TQ_MAX_ME>"
+	      }
+	    }
+	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Clutch"
 	      SID		      "7988"
 	      Ports		      [1, 1]
-	      Position		      [420, 702, 670, 858]
-	      ZOrder		      -7
+	      Position		      [205, 1077, 455, 1233]
+	      ZOrder		      137
 	      BackgroundColor	      "yellow"
 	      RequestExecContextInheritance off
 	      Port {
@@ -13904,7 +13799,7 @@ Model {
 	      }
 	      System {
 		Name			"Clutch"
-		Location		[-8, -8, 1374, 736]
+		Location		[-8, -8, 1310, 776]
 		Open			off
 		PortBlocksUseCompactNotation off
 		SetExecutionDomain	off
@@ -13914,12 +13809,12 @@ Model {
 		ScreenColor		"white"
 		PaperOrientation	"landscape"
 		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"100"
+		ZoomFactor		"80"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Input_Bus_Clutch\n"
@@ -14323,9 +14218,9 @@ Model {
 		    ScreenColor		    "white"
 		    PaperOrientation	    "landscape"
 		    PaperPositionMode	    "auto"
-		    PaperType		    "A4"
-		    PaperUnits		    "centimeters"
-		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 		    TiledPageScale	    1
 		    ShowPageBoundaries	    off
 		    ZoomFactor		    "168"
@@ -14756,7 +14651,7 @@ Model {
 		  IconDisplay		  "Port number"
 		}
 		Line {
-		  ZOrder		  73
+		  ZOrder		  1
 		  SrcBlock		  "From8"
 		  SrcPort		  1
 		  DstBlock		  "Delay"
@@ -14770,7 +14665,7 @@ Model {
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  51
+		  ZOrder		  3
 		  SrcBlock		  "Switch"
 		  SrcPort		  1
 		  DstBlock		  "Goto2"
@@ -14784,28 +14679,28 @@ Model {
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  6
+		  ZOrder		  5
 		  SrcBlock		  "Delay"
 		  SrcPort		  1
 		  Points		  [10, 0]
 		  Branch {
-		    ZOrder		    7
+		    ZOrder		    6
 		    Points		    [0, -76]
 		    Branch {
-		    ZOrder		    8
+		    ZOrder		    7
 		    Points		    [0, -154]
 		    DstBlock		    "E_Sum"
 		    DstPort		    1
 		    }
 		    Branch {
-		    ZOrder		    9
+		    ZOrder		    8
 		    Points		    [773, 0; 0, -29]
 		    DstBlock		    "Switch"
 		    DstPort		    1
 		    }
 		  }
 		  Branch {
-		    ZOrder		    10
+		    ZOrder		    9
 		    Labels		    [0, 0]
 		    Points		    [0, 135]
 		    DstBlock		    "Stuck logic"
@@ -14813,37 +14708,37 @@ Model {
 		  }
 		}
 		Line {
-		  ZOrder		  11
+		  ZOrder		  10
 		  SrcBlock		  " tr/min > rad/s"
 		  SrcPort		  1
 		  Points		  [0, 0]
 		  Branch {
-		    ZOrder		    12
+		    ZOrder		    11
 		    Points		    [116, 0]
 		    Branch {
-		    ZOrder		    13
+		    ZOrder		    12
 		    Points		    [0, -171; 29, 0; 0, -4]
 		    DstBlock		    "Discrete-Time\nIntegrator"
 		    DstPort		    3
 		    }
 		    Branch {
-		    ZOrder		    14
+		    ZOrder		    13
 		    Points		    [354, 0]
 		    Branch {
-		    ZOrder		    15
+		    ZOrder		    14
 		    Points		    [150, 0; 0, -240]
 		    DstBlock		    "Switch1"
 		    DstPort		    1
 		    }
 		    Branch {
-		    ZOrder		    16
+		    ZOrder		    15
 		    DstBlock		    "W_Slip"
 		    DstPort		    2
 		    }
 		    }
 		  }
 		  Branch {
-		    ZOrder		    17
+		    ZOrder		    16
 		    Labels		    [0, 0]
 		    Points		    [0, 105]
 		    DstBlock		    "Stuck logic"
@@ -14851,14 +14746,14 @@ Model {
 		  }
 		}
 		Line {
-		  ZOrder		  49
+		  ZOrder		  17
 		  SrcBlock		  "rad/s> tr/min"
 		  SrcPort		  1
 		  DstBlock		  "Goto1"
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  19
+		  ZOrder		  18
 		  Labels		  [0, 0]
 		  SrcBlock		  "Ratio of static\nto kinetic"
 		  SrcPort		  1
@@ -14866,14 +14761,14 @@ Model {
 		  DstPort		  4
 		}
 		Line {
-		  ZOrder		  20
+		  ZOrder		  19
 		  SrcBlock		  "E_Sum"
 		  SrcPort		  1
 		  DstBlock		  "Engine\nInertia1"
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  21
+		  ZOrder		  20
 		  Labels		  [0, 0]
 		  SrcBlock		  "Engine\nInertia1"
 		  SrcPort		  1
@@ -14882,7 +14777,7 @@ Model {
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  22
+		  ZOrder		  21
 		  SrcBlock		  "Relay"
 		  SrcPort		  1
 		  Points		  [-10, 0]
@@ -14890,45 +14785,45 @@ Model {
 		  DstPort		  2
 		}
 		Line {
-		  ZOrder		  23
+		  ZOrder		  22
 		  SrcBlock		  "Max\nDynamic\nFriction\nTorque"
 		  SrcPort		  1
 		  Points		  [5, 0]
 		  Branch {
-		    ZOrder		    24
+		    ZOrder		    23
 		    DstBlock		    "E_Sum"
 		    DstPort		    2
 		  }
 		  Branch {
-		    ZOrder		    25
+		    ZOrder		    24
 		    Points		    [0, 105]
 		    DstBlock		    "Switch"
 		    DstPort		    3
 		  }
 		}
 		Line {
-		  ZOrder		  26
+		  ZOrder		  25
 		  SrcBlock		  "From"
 		  SrcPort		  1
 		  DstBlock		  "Switch1"
 		  DstPort		  2
 		}
 		Line {
-		  ZOrder		  27
+		  ZOrder		  26
 		  SrcBlock		  "From1"
 		  SrcPort		  1
 		  DstBlock		  "Switch"
 		  DstPort		  2
 		}
 		Line {
-		  ZOrder		  28
+		  ZOrder		  27
 		  SrcBlock		  "From2"
 		  SrcPort		  1
 		  DstBlock		  "Discrete-Time\nIntegrator"
 		  DstPort		  2
 		}
 		Line {
-		  ZOrder		  29
+		  ZOrder		  28
 		  SrcBlock		  "W_Slip"
 		  SrcPort		  1
 		  Points		  [9, 0; 0, 105]
@@ -14936,14 +14831,14 @@ Model {
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  30
+		  ZOrder		  29
 		  SrcBlock		  "Delay2"
 		  SrcPort		  1
 		  DstBlock		  " tr/min > rad/s"
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  74
+		  ZOrder		  30
 		  SrcBlock		  "From9"
 		  SrcPort		  1
 		  Points		  [-17, 0; 0, -75]
@@ -14951,7 +14846,7 @@ Model {
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  71
+		  ZOrder		  31
 		  SrcBlock		  "From6"
 		  SrcPort		  1
 		  Points		  [55, 0]
@@ -14959,32 +14854,32 @@ Model {
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  33
+		  ZOrder		  32
 		  SrcBlock		  "Discrete-Time\nIntegrator"
 		  SrcPort		  1
 		  Points		  [60, 0]
 		  Branch {
-		    ZOrder		    34
+		    ZOrder		    33
 		    Points		    [130, 0]
 		    Branch {
-		    ZOrder		    35
+		    ZOrder		    34
 		    DstBlock		    "W_Slip"
 		    DstPort		    1
 		    }
 		    Branch {
-		    ZOrder		    36
+		    ZOrder		    35
 		    DstBlock		    "Switch1"
 		    DstPort		    3
 		    }
 		  }
 		  Branch {
-		    ZOrder		    37
+		    ZOrder		    36
 		    DstBlock		    "Delay3"
 		    DstPort		    1
 		  }
 		}
 		Line {
-		  ZOrder		  38
+		  ZOrder		  37
 		  SrcBlock		  "Delay3"
 		  SrcPort		  1
 		  Points		  [0, 9; 45, 0; 0, 216]
@@ -14992,7 +14887,7 @@ Model {
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  39
+		  ZOrder		  38
 		  SrcBlock		  "Switch2"
 		  SrcPort		  1
 		  Points		  [9, 0; 0, -105]
@@ -15000,14 +14895,14 @@ Model {
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  72
+		  ZOrder		  39
 		  SrcBlock		  "From7"
 		  SrcPort		  1
 		  DstBlock		  "Switch2"
 		  DstPort		  2
 		}
 		Line {
-		  ZOrder		  41
+		  ZOrder		  40
 		  SrcBlock		  "Constant"
 		  SrcPort		  1
 		  Points		  [20, 0; 0, -20]
@@ -15015,21 +14910,21 @@ Model {
 		  DstPort		  3
 		}
 		Line {
-		  ZOrder		  42
+		  ZOrder		  41
 		  SrcBlock		  "Delay4"
 		  SrcPort		  1
 		  DstBlock		  "Relay"
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  43
+		  ZOrder		  42
 		  SrcBlock		  "CLU_PV_SENSITIVITY"
 		  SrcPort		  1
 		  DstBlock		  "Prodct"
 		  DstPort		  2
 		}
 		Line {
-		  ZOrder		  44
+		  ZOrder		  43
 		  SrcBlock		  "Stuck logic"
 		  SrcPort		  1
 		  DstBlock		  "Goto"
@@ -15037,7 +14932,7 @@ Model {
 		}
 		Line {
 		  Name			  "OB_CLU"
-		  ZOrder		  48
+		  ZOrder		  44
 		  Labels		  [0, 1]
 		  SrcBlock		  "Bus\nCreator"
 		  SrcPort		  1
@@ -15046,7 +14941,7 @@ Model {
 		}
 		Line {
 		  Name			  "FA_N_ICE"
-		  ZOrder		  50
+		  ZOrder		  45
 		  Labels		  [1, 1]
 		  SrcBlock		  "From3"
 		  SrcPort		  1
@@ -15055,7 +14950,7 @@ Model {
 		}
 		Line {
 		  Name			  "FA_TQ_CLU"
-		  ZOrder		  52
+		  ZOrder		  46
 		  Labels		  [1, 1]
 		  SrcBlock		  "From4"
 		  SrcPort		  1
@@ -15064,7 +14959,7 @@ Model {
 		}
 		Line {
 		  Name			  "FA_CLU_STUCK"
-		  ZOrder		  56
+		  ZOrder		  47
 		  Labels		  [1, 1]
 		  SrcBlock		  "From5"
 		  SrcPort		  1
@@ -15073,7 +14968,7 @@ Model {
 		}
 		Line {
 		  Name			  "IB_CLU"
-		  ZOrder		  57
+		  ZOrder		  48
 		  Labels		  [1, 0]
 		  SrcBlock		  "Input_Bus_Clutch\n"
 		  SrcPort		  1
@@ -15082,7 +14977,7 @@ Model {
 		}
 		Line {
 		  Name			  "<FA_TQ_ICE>"
-		  ZOrder		  60
+		  ZOrder		  49
 		  Labels		  [1, 1]
 		  SrcBlock		  "Bus\nSelector"
 		  SrcPort		  1
@@ -15091,7 +14986,7 @@ Model {
 		}
 		Line {
 		  Name			  "<FA_N_GBX>"
-		  ZOrder		  62
+		  ZOrder		  50
 		  Labels		  [1, 1]
 		  SrcBlock		  "Bus\nSelector"
 		  SrcPort		  2
@@ -15100,7 +14995,7 @@ Model {
 		}
 		Line {
 		  Name			  "<CMD_CLUTCH_SP>"
-		  ZOrder		  65
+		  ZOrder		  51
 		  Labels		  [1, 1]
 		  SrcBlock		  "Bus\nSelector"
 		  SrcPort		  3
@@ -15109,7 +15004,7 @@ Model {
 		}
 		Line {
 		  Name			  "<DRI_GBX_SP>"
-		  ZOrder		  67
+		  ZOrder		  52
 		  Labels		  [0, 0]
 		  SrcBlock		  "Bus\nSelector"
 		  SrcPort		  4
@@ -15117,18 +15012,18 @@ Model {
 		  DstPort		  1
 		}
 		Line {
-		  ZOrder		  5
+		  ZOrder		  53
 		  SrcBlock		  "Prodct"
 		  SrcPort		  1
 		  Points		  [30, 0]
 		  Branch {
-		    ZOrder		    129
+		    ZOrder		    54
 		    Points		    [0, 80]
 		    DstBlock		    "Ratio of static\nto kinetic"
 		    DstPort		    1
 		  }
 		  Branch {
-		    ZOrder		    128
+		    ZOrder		    55
 		    Points		    [31, 0; 0, -245]
 		    DstBlock		    "Max\nDynamic\nFriction\nTorque"
 		    DstPort		    1
@@ -15147,7 +15042,7 @@ Model {
 		  BackgroundColor	  "[0.901961, 0.901961, 1.000000]"
 		  DropShadow		  on
 		  AnnotationType	  "area_annotation"
-		  ZOrder		  25
+		  ZOrder		  -1
 		  FontName		  "Arial"
 		  FontSize		  12
 		}
@@ -15170,7 +15065,7 @@ Model {
 	      Name		      "Demux"
 	      SID		      "8038"
 	      Ports		      [1, 3]
-	      Position		      [1910, 513, 1915, 627]
+	      Position		      [2660, 513, 2665, 627]
 	      ZOrder		      -9
 	      ShowName		      off
 	      Outputs		      "3"
@@ -15193,7 +15088,7 @@ Model {
 	      Name		      "Doc Front axle"
 	      SID		      "8039"
 	      Ports		      []
-	      Position		      [1120, 302, 1167, 361]
+	      Position		      [1155, 317, 1202, 376]
 	      ZOrder		      -10
 	      BackgroundColor	      "lightBlue"
 	      LibraryVersion	      "1.225"
@@ -15227,6 +15122,1302 @@ Model {
 	    }
 	    Block {
 	      BlockType		      SubSystem
+	      Name		      "Doc Rear axle"
+	      SID		      "9235"
+	      Ports		      []
+	      Position		      [1230, 317, 1277, 376]
+	      ZOrder		      105
+	      BackgroundColor	      "lightBlue"
+	      LibraryVersion	      "1.225"
+	      OpenFcn		      "open('Documents\\RearAxle.pdf')"
+	      RequestExecContextInheritance off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		33
+		$ClassName		"Simulink.Mask"
+		Display			"fprintf('DOC')"
+	      }
+	      System {
+		Name			"Doc Rear axle"
+		Location		[16, 52, 1372, 1280]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Electrical machine"
+	      SID		      "9236"
+	      Ports		      [1, 1]
+	      Position		      [300, 733, 595, 897]
+	      ZOrder		      104
+	      BackgroundColor	      "yellow"
+	      RequestExecContextInheritance off
+	      Port {
+		PortNumber		1
+		Name			"OB_EM"
+	      }
+	      System {
+		Name			"Electrical machine"
+		Location		[-8, -8, 1310, 776]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"80"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Input_Bus_Electrical_Machine"
+		  SID			  "9237"
+		  Position		  [40, 588, 70, 602]
+		  ZOrder		  18
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    Name		    "IB_EM"
+		    PropagatedSignals	    "IB_EM"
+		  }
+		}
+		Block {
+		  BlockType		  BusCreator
+		  Name			  "Bus\nCreator"
+		  SID			  "9238"
+		  Ports			  [4, 1]
+		  Position		  [800, 505, 810, 680]
+		  ZOrder		  8
+		  ShowName		  off
+		  Inputs		  "4"
+		  DisplayOption		  "bar"
+		  InheritFromInputs	  on
+		  Port {
+		    PortNumber		    1
+		    Name		    "OB_EM"
+		  }
+		}
+		Block {
+		  BlockType		  BusCreator
+		  Name			  "Bus\nCreator1"
+		  SID			  "9239"
+		  Ports			  [2, 1]
+		  Position		  [210, 297, 215, 428]
+		  ZOrder		  22
+		  ShowName		  off
+		  Inputs		  "2"
+		  DisplayOption		  "bar"
+		  InheritFromInputs	  on
+		  Port {
+		    PortNumber		    1
+		    Name		    "IB_ER"
+		  }
+		}
+		Block {
+		  BlockType		  BusCreator
+		  Name			  "Bus\nCreator2"
+		  SID			  "9240"
+		  Ports			  [3, 1]
+		  Position		  [305, 76, 310, 204]
+		  ZOrder		  27
+		  ShowName		  off
+		  Inputs		  "3"
+		  DisplayOption		  "bar"
+		  InheritFromInputs	  on
+		  Port {
+		    PortNumber		    1
+		    Name		    "IB_PE"
+		  }
+		}
+		Block {
+		  BlockType		  BusSelector
+		  Name			  "Bus\nSelector"
+		  SID			  "9241"
+		  Ports			  [1, 3]
+		  Position		  [150, 508, 155, 682]
+		  ZOrder		  17
+		  ShowName		  off
+		  OutputSignals		  "CMD_RA_TQ_SP,RA_N_EM,SYSE_VOLTAGE_HV"
+		  OutputAsBus		  off
+		  Port {
+		    PortNumber		    1
+		    Name		    "<CMD_RA_TQ_SP>"
+		  }
+		  Port {
+		    PortNumber		    2
+		    Name		    "<RA_N_EM>"
+		  }
+		  Port {
+		    PortNumber		    3
+		    Name		    "<SYSE_VOLTAGE_HV>"
+		  }
+		}
+		Block {
+		  BlockType		  BusSelector
+		  Name			  "Bus\nSelector1"
+		  SID			  "9242"
+		  Ports			  [1, 3]
+		  Position		  [685, 300, 690, 430]
+		  ZOrder		  25
+		  ShowName		  off
+		  OutputSignals		  "RA_TQ_ME,RA_TQ_MIN_ME,RA_TQ_MAX_ME"
+		  OutputAsBus		  off
+		  Port {
+		    PortNumber		    1
+		    Name		    "<RA_TQ_ME>"
+		  }
+		  Port {
+		    PortNumber		    2
+		    Name		    "<RA_TQ_MIN_ME>"
+		  }
+		  Port {
+		    PortNumber		    3
+		    Name		    "<RA_TQ_MAX_ME>"
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Engine representation"
+		  SID			  "9243"
+		  Ports			  [1, 1]
+		  Position		  [285, 302, 640, 428]
+		  ZOrder		  -5
+		  BackgroundColor	  "green"
+		  RequestExecContextInheritance	off
+		  Port {
+		    PortNumber		    1
+		    Name		    "IB_ER"
+		  }
+		  System {
+		    Name		    "Engine representation"
+		    Location		    [-8, -8, 1310, 776]
+		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Input_Bus_Engine_Representation"
+		    SID			    "9244"
+		    Position		    [130, 408, 160, 422]
+		    ZOrder		    4
+		    IconDisplay		    "Port number"
+		    Port {
+		    PortNumber		    1
+		    Name		    "IB_ER"
+		    PropagatedSignals	    "IB_ER"
+		    }
+		    }
+		    Block {
+		    BlockType		    BusCreator
+		    Name		    "Bus\nCreator"
+		    SID			    "9245"
+		    Ports		    [3, 1]
+		    Position		    [780, 381, 785, 459]
+		    ZOrder		    10
+		    ShowName		    off
+		    Inputs		    "3"
+		    DisplayOption	    "bar"
+		    InheritFromInputs	    on
+		    Port {
+		    PortNumber		    1
+		    Name		    "IB_ER"
+		    }
+		    }
+		    Block {
+		    BlockType		    BusSelector
+		    Name		    "Bus\nSelector"
+		    SID			    "9246"
+		    Ports		    [1, 2]
+		    Position		    [275, 383, 280, 447]
+		    ZOrder		    5
+		    ShowName		    off
+		    OutputSignals	    "CMD_RA_TQ_SP,RA_N_EM"
+		    OutputAsBus		    off
+		    Port {
+		    PortNumber		    1
+		    Name		    "<CMD_RA_TQ_SP>"
+		    }
+		    Port {
+		    PortNumber		    2
+		    Name		    "<RA_N_EM>"
+		    }
+		    }
+		    Block {
+		    BlockType		    DiscreteTransferFcn
+		    Name		    "Discrete\nTransfer Fcn3"
+		    SID			    "9247"
+		    Ports		    [1, 1]
+		    Position		    [415, 101, 835, 199]
+		    ZOrder		    3
+		    InputPortMap	    "u0"
+		    Numerator		    "[(hev_dt/(2*(ra_electrical_machine_tau)+hev_dt)) (hev_dt/(2*(ra_electrical_machine_tau)+hev_dt))]"
+		    Denominator		    "[1 ((hev_dt-2*(ra_electrical_machine_tau)))/(2*(ra_electrical_machine_tau)+hev_dt)]"
+		    SampleTime		    "hev_dt"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From"
+		    SID			    "9248"
+		    Position		    [30, 138, 155, 162]
+		    ZOrder		    8
+		    GotoTag		    "CMD_RA_TQ_SP"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From1"
+		    SID			    "9249"
+		    Position		    [50, 63, 140, 87]
+		    ZOrder		    9
+		    GotoTag		    "RA_N_EM"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From2"
+		    SID			    "9250"
+		    Position		    [585, 386, 675, 404]
+		    ZOrder		    15
+		    GotoTag		    "RA_TQ_ME"
+		    Port {
+		    PortNumber		    1
+		    Name		    "RA_TQ_ME"
+		    }
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From3"
+		    SID			    "9251"
+		    Position		    [585, 411, 685, 429]
+		    ZOrder		    16
+		    GotoTag		    "RA_TQ_MIN_ME"
+		    Port {
+		    PortNumber		    1
+		    Name		    "RA_TQ_MIN_ME"
+		    }
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From4"
+		    SID			    "9252"
+		    Position		    [580, 436, 690, 454]
+		    ZOrder		    17
+		    GotoTag		    "RA_TQ_MAX_ME"
+		    Port {
+		    PortNumber		    1
+		    Name		    "RA_TQ_MAX_ME"
+		    }
+		    }
+		    Block {
+		    BlockType		    Goto
+		    Name		    "Goto"
+		    SID			    "9253"
+		    Position		    [390, 387, 495, 413]
+		    ZOrder		    6
+		    GotoTag		    "CMD_RA_TQ_SP"
+		    }
+		    Block {
+		    BlockType		    Goto
+		    Name		    "Goto1"
+		    SID			    "9254"
+		    Position		    [390, 417, 495, 443]
+		    ZOrder		    7
+		    GotoTag		    "RA_N_EM"
+		    }
+		    Block {
+		    BlockType		    Goto
+		    Name		    "Goto2"
+		    SID			    "9255"
+		    Position		    [875, 137, 980, 163]
+		    ZOrder		    12
+		    GotoTag		    "RA_TQ_ME"
+		    }
+		    Block {
+		    BlockType		    Goto
+		    Name		    "Goto3"
+		    SID			    "9256"
+		    Position		    [665, 62, 770, 88]
+		    ZOrder		    13
+		    GotoTag		    "RA_TQ_MAX_ME"
+		    }
+		    Block {
+		    BlockType		    Goto
+		    Name		    "Goto4"
+		    SID			    "9257"
+		    Position		    [680, 237, 785, 263]
+		    ZOrder		    14
+		    GotoTag		    "RA_TQ_MIN_ME"
+		    }
+		    Block {
+		    BlockType		    Lookup
+		    Name		    "Maximum torque"
+		    SID			    "9258"
+		    Position		    [190, 43, 255, 107]
+		    ZOrder		    -4
+		    InputValues		    "ra_electrical_machine_speed"
+		    Table		    "ra_em_max_tq"
+		    LookUpMeth		    "Interpolation-Use End Values"
+		    SaturateOnIntegerOverflow off
+		    SampleTime		    "hev_dt"
+		    }
+		    Block {
+		    BlockType		    Lookup
+		    Name		    "Minimum torque"
+		    SID			    "9259"
+		    Position		    [190, 218, 255, 282]
+		    ZOrder		    -5
+		    InputValues		    "ra_electrical_machine_speed"
+		    Table		    "ra_em_min_tq"
+		    LookUpMeth		    "Interpolation-Use End Values"
+		    SaturateOnIntegerOverflow off
+		    SampleTime		    "hev_dt"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Saturation\nDynamic"
+		    SID			    "9260"
+		    Ports		    [3, 1]
+		    Position		    [295, 130, 375, 170]
+		    ZOrder		    -6
+		    LibraryVersion	    "1.444"
+		    SourceBlock		    "simulink/Discontinuities/Saturation\nDynamic"
+		    SourceType		    "Saturation Dynamic"
+		    SourceProductName	    "Simulink"
+		    SourceProductBaseCode   "SL"
+		    ContentPreviewEnabled   off
+		    OutMin		    "[]"
+		    OutMax		    "[]"
+		    OutDataTypeStr	    "Inherit: Same as second input"
+		    OutputDataTypeScalingMode "Same as second input"
+		    OutDataType		    "fixdt(1, 16)"
+		    OutScaling		    "2^-10"
+		    LockScale		    off
+		    RndMeth		    "Floor"
+		    DoSatur		    off
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Output_Bus_Engine_Representation"
+		    SID			    "9261"
+		    Position		    [860, 413, 890, 427]
+		    ZOrder		    11
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    1
+		    SrcBlock		    "From1"
+		    SrcPort		    1
+		    Points		    [25, 0]
+		    Branch {
+		    ZOrder		    2
+		    DstBlock		    "Maximum torque"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    3
+		    Points		    [0, 175]
+		    DstBlock		    "Minimum torque"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    ZOrder		    4
+		    SrcBlock		    "Maximum torque"
+		    SrcPort		    1
+		    Points		    [15, 0]
+		    Branch {
+		    ZOrder		    5
+		    DstBlock		    "Goto3"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    6
+		    Points		    [0, 60]
+		    DstBlock		    "Saturation\nDynamic"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    ZOrder		    7
+		    SrcBlock		    "Minimum torque"
+		    SrcPort		    1
+		    Points		    [15, 0]
+		    Branch {
+		    ZOrder		    8
+		    DstBlock		    "Goto4"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    9
+		    Points		    [0, -85]
+		    DstBlock		    "Saturation\nDynamic"
+		    DstPort		    3
+		    }
+		    }
+		    Line {
+		    ZOrder		    10
+		    SrcBlock		    "Saturation\nDynamic"
+		    SrcPort		    1
+		    DstBlock		    "Discrete\nTransfer Fcn3"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    11
+		    SrcBlock		    "From"
+		    SrcPort		    1
+		    DstBlock		    "Saturation\nDynamic"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    12
+		    SrcBlock		    "Discrete\nTransfer Fcn3"
+		    SrcPort		    1
+		    DstBlock		    "Goto2"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "IB_ER"
+		    ZOrder		    13
+		    Labels		    [1, 0]
+		    SrcBlock		    "Input_Bus_Engine_Representation"
+		    SrcPort		    1
+		    DstBlock		    "Bus\nSelector"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "<CMD_RA_TQ_SP>"
+		    ZOrder		    14
+		    Labels		    [0, 0]
+		    SrcBlock		    "Bus\nSelector"
+		    SrcPort		    1
+		    DstBlock		    "Goto"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "<RA_N_EM>"
+		    ZOrder		    15
+		    Labels		    [0, 0]
+		    SrcBlock		    "Bus\nSelector"
+		    SrcPort		    2
+		    DstBlock		    "Goto1"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "IB_ER"
+		    ZOrder		    16
+		    Labels		    [1, 0]
+		    SrcBlock		    "Bus\nCreator"
+		    SrcPort		    1
+		    DstBlock		    "Output_Bus_Engine_Representation"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "RA_TQ_ME"
+		    ZOrder		    17
+		    Labels		    [1, 1]
+		    SrcBlock		    "From2"
+		    SrcPort		    1
+		    DstBlock		    "Bus\nCreator"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "RA_TQ_MIN_ME"
+		    ZOrder		    18
+		    Labels		    [1, 1]
+		    SrcBlock		    "From3"
+		    SrcPort		    1
+		    DstBlock		    "Bus\nCreator"
+		    DstPort		    2
+		    }
+		    Line {
+		    Name		    "RA_TQ_MAX_ME"
+		    ZOrder		    19
+		    Labels		    [1, 1]
+		    SrcBlock		    "From4"
+		    SrcPort		    1
+		    DstBlock		    "Bus\nCreator"
+		    DstPort		    3
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From"
+		  SID			  "9262"
+		  Position		  [530, 598, 625, 632]
+		  ZOrder		  9
+		  GotoTag		  "RA_TQ_MIN_ME"
+		  Port {
+		    PortNumber		    1
+		    Name		    "RA_TQ_MIN_ME"
+		  }
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From1"
+		  SID			  "9263"
+		  Position		  [530, 646, 645, 674]
+		  ZOrder		  10
+		  GotoTag		  "RA_TQ_MAX_ME"
+		  Port {
+		    PortNumber		    1
+		    Name		    "RA_TQ_MAX_ME"
+		  }
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From2"
+		  SID			  "9264"
+		  Position		  [530, 556, 625, 584]
+		  ZOrder		  13
+		  GotoTag		  "RA_TQ_ME"
+		  Port {
+		    PortNumber		    1
+		    Name		    "RA_TQ_ME"
+		  }
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From3"
+		  SID			  "9265"
+		  Position		  [530, 513, 640, 537]
+		  ZOrder		  15
+		  GotoTag		  "RA_EM_CURRENT"
+		  Port {
+		    PortNumber		    1
+		    Name		    "RA_EM_CURRENT"
+		  }
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From4"
+		  SID			  "9266"
+		  Position		  [40, 315, 155, 345]
+		  ZOrder		  23
+		  GotoTag		  "CMD_RA_TQ_SP"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From5"
+		  SID			  "9267"
+		  Position		  [40, 383, 155, 407]
+		  ZOrder		  24
+		  GotoTag		  "RA_N_EM"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From6"
+		  SID			  "9268"
+		  Position		  [115, 88, 210, 112]
+		  ZOrder		  29
+		  GotoTag		  "RA_TQ_ME"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From7"
+		  SID			  "9269"
+		  Position		  [115, 128, 210, 152]
+		  ZOrder		  30
+		  GotoTag		  "RA_N_EM"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From8"
+		  SID			  "9270"
+		  Position		  [115, 166, 230, 194]
+		  ZOrder		  31
+		  GotoTag		  "SYSE_VOLTAGE_HV"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto"
+		  SID			  "9271"
+		  Position		  [790, 352, 910, 378]
+		  ZOrder		  2
+		  GotoTag		  "RA_TQ_MIN_ME"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto1"
+		  SID			  "9272"
+		  Position		  [790, 397, 910, 423]
+		  ZOrder		  7
+		  GotoTag		  "RA_TQ_MAX_ME"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto3"
+		  SID			  "9273"
+		  Position		  [770, 127, 890, 153]
+		  ZOrder		  12
+		  GotoTag		  "RA_EM_CURRENT"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto4"
+		  SID			  "9274"
+		  Position		  [280, 642, 400, 668]
+		  ZOrder		  19
+		  GotoTag		  "SYSE_VOLTAGE_HV"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto5"
+		  SID			  "9275"
+		  Position		  [280, 582, 400, 608]
+		  ZOrder		  20
+		  GotoTag		  "RA_N_EM"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto6"
+		  SID			  "9276"
+		  Position		  [285, 522, 405, 548]
+		  ZOrder		  21
+		  GotoTag		  "CMD_RA_TQ_SP"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto7"
+		  SID			  "9277"
+		  Position		  [790, 307, 910, 333]
+		  ZOrder		  26
+		  GotoTag		  "RA_TQ_ME"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "Power efficiency"
+		  SID			  "9278"
+		  Ports			  [1, 1]
+		  Position		  [375, 82, 640, 198]
+		  ZOrder		  -6
+		  BackgroundColor	  "yellow"
+		  RequestExecContextInheritance	off
+		  Port {
+		    PortNumber		    1
+		    Name		    "RA_EM_CURRENT"
+		  }
+		  System {
+		    Name		    "Power efficiency"
+		    Location		    [-8, -8, 1374, 736]
+		    Open		    off
+		    PortBlocksUseCompactNotation off
+		    SetExecutionDomain	    off
+		    ExecutionDomainType	    "Deduce"
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "usletter"
+		    PaperUnits		    "inches"
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "Input_Bus_Power_Efficiency"
+		    SID			    "9279"
+		    Position		    [110, 408, 140, 422]
+		    ZOrder		    5
+		    IconDisplay		    "Port number"
+		    Port {
+		    PortNumber		    1
+		    Name		    "IB_PE"
+		    PropagatedSignals	    "IB_PE"
+		    }
+		    }
+		    Block {
+		    BlockType		    BusSelector
+		    Name		    "Bus\nSelector"
+		    SID			    "9280"
+		    Ports		    [1, 3]
+		    Position		    [225, 363, 230, 467]
+		    ZOrder		    7
+		    ShowName		    off
+		    OutputSignals	    "RA_TQ_ME,RA_N_EM,SYSE_VOLTAGE_HV"
+		    OutputAsBus		    off
+		    Port {
+		    PortNumber		    1
+		    Name		    "<RA_TQ_ME>"
+		    }
+		    Port {
+		    PortNumber		    2
+		    Name		    "<RA_N_EM>"
+		    }
+		    Port {
+		    PortNumber		    3
+		    Name		    "<SYSE_VOLTAGE_HV>"
+		    }
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Divide"
+		    SID			    "9281"
+		    Ports		    [2, 1]
+		    Position		    [595, 17, 625, 48]
+		    ZOrder		    -3
+		    Inputs		    "/*"
+		    InputSameDT		    off
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    RndMeth		    "Floor"
+		    SaturateOnIntegerOverflow off
+		    SampleTime		    "hev_dt"
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Divide1"
+		    SID			    "9282"
+		    Ports		    [2, 1]
+		    Position		    [450, 257, 480, 288]
+		    ZOrder		    3
+		    Inputs		    "*/"
+		    InputSameDT		    off
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    RndMeth		    "Floor"
+		    SaturateOnIntegerOverflow off
+		    SampleTime		    "hev_dt"
+		    }
+		    Block {
+		    BlockType		    Lookup_n-D
+		    Name		    "Efficiency (%)"
+		    SID			    "9283"
+		    Ports		    [2, 1]
+		    Position		    [225, 43, 290, 107]
+		    ZOrder		    -4
+		    BreakpointsForDimension1 "ra_electrical_machine_torque"
+		    BreakpointsForDimension2 "ra_electrical_machine_speed"
+		    Table		    "ra_electrical_machine_efficiency"
+		    SampleTime		    "hev_dt"
+		    RndMeth		    "Simplest"
+		    }
+		    Block {
+		    BlockType		    Gain
+		    Name		    "Efficiency conversion"
+		    SID			    "9284"
+		    Position		    [335, 59, 385, 91]
+		    ZOrder		    -5
+		    Gain		    "1/100"
+		    ParamDataTypeStr	    "Inherit: Inherit via internal rule"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    SaturateOnIntegerOverflow off
+		    SampleTime		    "hev_dt"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From"
+		    SID			    "9285"
+		    Position		    [25, 46, 120, 74]
+		    ZOrder		    26
+		    GotoTag		    "RA_TQ_ME"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From1"
+		    SID			    "9286"
+		    Position		    [25, 141, 120, 169]
+		    ZOrder		    27
+		    GotoTag		    "RA_N_ME"
+		    }
+		    Block {
+		    BlockType		    From
+		    Name		    "From2"
+		    SID			    "9287"
+		    Position		    [80, 266, 200, 294]
+		    ZOrder		    28
+		    GotoTag		    "SYSE_VOLTAGE_HV"
+		    }
+		    Block {
+		    BlockType		    Goto
+		    Name		    "Goto"
+		    SID			    "9288"
+		    Position		    [345, 367, 465, 393]
+		    ZOrder		    8
+		    GotoTag		    "RA_TQ_ME"
+		    }
+		    Block {
+		    BlockType		    Goto
+		    Name		    "Goto1"
+		    SID			    "9289"
+		    Position		    [345, 402, 465, 428]
+		    ZOrder		    24
+		    GotoTag		    "RA_N_ME"
+		    }
+		    Block {
+		    BlockType		    Goto
+		    Name		    "Goto2"
+		    SID			    "9290"
+		    Position		    [345, 437, 465, 463]
+		    ZOrder		    25
+		    GotoTag		    "SYSE_VOLTAGE_HV"
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product"
+		    SID			    "9291"
+		    Ports		    [2, 1]
+		    Position		    [450, 66, 480, 99]
+		    ZOrder		    -6
+		    InputSameDT		    off
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    SaturateOnIntegerOverflow off
+		    SampleTime		    "hev_dt"
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product1"
+		    SID			    "9292"
+		    Ports		    [2, 1]
+		    Position		    [595, 116, 625, 149]
+		    ZOrder		    -7
+		    InputSameDT		    off
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    SaturateOnIntegerOverflow off
+		    SampleTime		    "hev_dt"
+		    }
+		    Block {
+		    BlockType		    Switch
+		    Name		    "Switch"
+		    SID			    "9293"
+		    Position		    [715, 65, 765, 105]
+		    ZOrder		    -8
+		    InputSameDT		    off
+		    SaturateOnIntegerOverflow off
+		    SampleTime		    "hev_dt"
+		    Port {
+		    PortNumber		    1
+		    Name		    "W"
+		    }
+		    }
+		    Block {
+		    BlockType		    Gain
+		    Name		    "tr/min -> rad/s"
+		    SID			    "9294"
+		    Position		    [335, 140, 365, 170]
+		    ZOrder		    -9
+		    Gain		    "2*pi/60"
+		    ParamDataTypeStr	    "Inherit: Inherit via internal rule"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    SaturateOnIntegerOverflow off
+		    SampleTime		    "hev_dt"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "RA_EM_CURRENT"
+		    SID			    "9295"
+		    Position		    [620, 268, 650, 282]
+		    ZOrder		    2
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    1
+		    SrcBlock		    "Efficiency (%)"
+		    SrcPort		    1
+		    DstBlock		    "Efficiency conversion"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    2
+		    SrcBlock		    "Product"
+		    SrcPort		    1
+		    Points		    [90, 0]
+		    Branch {
+		    ZOrder		    3
+		    DstBlock		    "Switch"
+		    DstPort		    2
+		    }
+		    Branch {
+		    ZOrder		    4
+		    Points		    [0, 40]
+		    DstBlock		    "Product1"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    5
+		    Points		    [0, -45]
+		    DstBlock		    "Divide"
+		    DstPort		    2
+		    }
+		    }
+		    Line {
+		    ZOrder		    6
+		    SrcBlock		    "Divide"
+		    SrcPort		    1
+		    Points		    [35, 0; 0, 35]
+		    DstBlock		    "Switch"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    7
+		    SrcBlock		    "Product1"
+		    SrcPort		    1
+		    Points		    [35, 0; 0, -35]
+		    DstBlock		    "Switch"
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    8
+		    SrcBlock		    "Efficiency conversion"
+		    SrcPort		    1
+		    Points		    [20, 0]
+		    Branch {
+		    ZOrder		    9
+		    Points		    [0, 65]
+		    DstBlock		    "Product1"
+		    DstPort		    2
+		    }
+		    Branch {
+		    ZOrder		    10
+		    Points		    [0, -50]
+		    DstBlock		    "Divide"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    ZOrder		    11
+		    SrcBlock		    "tr/min -> rad/s"
+		    SrcPort		    1
+		    Points		    [65, 0]
+		    DstBlock		    "Product"
+		    DstPort		    2
+		    }
+		    Line {
+		    Name		    "W"
+		    ZOrder		    12
+		    Labels		    [0, 0]
+		    SrcBlock		    "Switch"
+		    SrcPort		    1
+		    Points		    [18, 0; 0, 120; -359, 0; 0, 60]
+		    DstBlock		    "Divide1"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    13
+		    SrcBlock		    "From"
+		    SrcPort		    1
+		    Points		    [50, 0]
+		    Branch {
+		    ZOrder		    14
+		    Points		    [0, -27; 248, 0; 0, 42]
+		    DstBlock		    "Product"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    15
+		    DstBlock		    "Efficiency (%)"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    ZOrder		    16
+		    SrcBlock		    "From1"
+		    SrcPort		    1
+		    Points		    [16, 0]
+		    Branch {
+		    ZOrder		    17
+		    Points		    [0, -65]
+		    DstBlock		    "Efficiency (%)"
+		    DstPort		    2
+		    }
+		    Branch {
+		    ZOrder		    18
+		    DstBlock		    "tr/min -> rad/s"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    ZOrder		    19
+		    SrcBlock		    "Divide1"
+		    SrcPort		    1
+		    DstBlock		    "RA_EM_CURRENT"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    20
+		    SrcBlock		    "From2"
+		    SrcPort		    1
+		    DstBlock		    "Divide1"
+		    DstPort		    2
+		    }
+		    Line {
+		    Name		    "IB_PE"
+		    ZOrder		    21
+		    Labels		    [1, 0]
+		    SrcBlock		    "Input_Bus_Power_Efficiency"
+		    SrcPort		    1
+		    DstBlock		    "Bus\nSelector"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "<RA_TQ_ME>"
+		    ZOrder		    22
+		    Labels		    [0, 0]
+		    SrcBlock		    "Bus\nSelector"
+		    SrcPort		    1
+		    DstBlock		    "Goto"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "<RA_N_EM>"
+		    ZOrder		    23
+		    Labels		    [0, 0]
+		    SrcBlock		    "Bus\nSelector"
+		    SrcPort		    2
+		    DstBlock		    "Goto1"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "<SYSE_VOLTAGE_HV>"
+		    ZOrder		    24
+		    Labels		    [0, 0]
+		    SrcBlock		    "Bus\nSelector"
+		    SrcPort		    3
+		    DstBlock		    "Goto2"
+		    DstPort		    1
+		    }
+		    Annotation {
+		    SID			    "9296"
+		    Position		    [780, 174, 782, 188]
+		    InternalMargins	    [0, 0, 0, 0]
+		    ZOrder		    -1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Output_Bus_Electrical_Machine"
+		  SID			  "9297"
+		  Position		  [910, 588, 940, 602]
+		  ZOrder		  16
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  Name			  "RA_EM_CURRENT"
+		  ZOrder		  1
+		  Labels		  [1, 1]
+		  SrcBlock		  "Power efficiency"
+		  SrcPort		  1
+		  DstBlock		  "Goto3"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "RA_TQ_MIN_ME"
+		  ZOrder		  2
+		  Labels		  [1, 1]
+		  SrcBlock		  "From"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nCreator"
+		  DstPort		  3
+		}
+		Line {
+		  Name			  "RA_TQ_MAX_ME"
+		  ZOrder		  3
+		  Labels		  [1, 1]
+		  SrcBlock		  "From1"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nCreator"
+		  DstPort		  4
+		}
+		Line {
+		  Name			  "RA_TQ_ME"
+		  ZOrder		  4
+		  Labels		  [1, 1]
+		  SrcBlock		  "From2"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nCreator"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "RA_EM_CURRENT"
+		  ZOrder		  5
+		  Labels		  [1, 1]
+		  SrcBlock		  "From3"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nCreator"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "OB_EM"
+		  ZOrder		  6
+		  Labels		  [1, 0]
+		  SrcBlock		  "Bus\nCreator"
+		  SrcPort		  1
+		  DstBlock		  "Output_Bus_Electrical_Machine"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "IB_EM"
+		  ZOrder		  7
+		  Labels		  [1, 0]
+		  SrcBlock		  "Input_Bus_Electrical_Machine"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nSelector"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<SYSE_VOLTAGE_HV>"
+		  ZOrder		  8
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector"
+		  SrcPort		  3
+		  DstBlock		  "Goto4"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<RA_N_EM>"
+		  ZOrder		  9
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector"
+		  SrcPort		  2
+		  DstBlock		  "Goto5"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<CMD_RA_TQ_SP>"
+		  ZOrder		  10
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector"
+		  SrcPort		  1
+		  DstBlock		  "Goto6"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  11
+		  SrcBlock		  "From4"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nCreator1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  12
+		  SrcBlock		  "From5"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nCreator1"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "IB_ER"
+		  ZOrder		  13
+		  Labels		  [1, 1]
+		  SrcBlock		  "Bus\nCreator1"
+		  SrcPort		  1
+		  DstBlock		  "Engine representation"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "IB_ER"
+		  ZOrder		  14
+		  Labels		  [1, 1]
+		  SrcBlock		  "Engine representation"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nSelector1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<RA_TQ_MIN_ME>"
+		  ZOrder		  15
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector1"
+		  SrcPort		  2
+		  DstBlock		  "Goto"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<RA_TQ_MAX_ME>"
+		  ZOrder		  16
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector1"
+		  SrcPort		  3
+		  DstBlock		  "Goto1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "<RA_TQ_ME>"
+		  ZOrder		  17
+		  Labels		  [0, 0]
+		  SrcBlock		  "Bus\nSelector1"
+		  SrcPort		  1
+		  DstBlock		  "Goto7"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "IB_PE"
+		  ZOrder		  18
+		  Labels		  [1, 0]
+		  SrcBlock		  "Bus\nCreator2"
+		  SrcPort		  1
+		  DstBlock		  "Power efficiency"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  19
+		  SrcBlock		  "From6"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nCreator2"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  20
+		  SrcBlock		  "From7"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nCreator2"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  21
+		  SrcBlock		  "From8"
+		  SrcPort		  1
+		  DstBlock		  "Bus\nCreator2"
+		  DstPort		  3
+		}
+		Annotation {
+		  SID			  "9298"
+		  Name			  "Bus Area"
+		  Position		  [25, 475, 955, 697]
+		  InternalMargins	  [0, 0, 0, 0]
+		  FixedWidth		  on
+		  ForegroundColor	  "[0.901961, 0.901961, 1.000000]"
+		  BackgroundColor	  "[0.901961, 0.901961, 1.000000]"
+		  DropShadow		  on
+		  AnnotationType	  "area_annotation"
+		  ZOrder		  -1
+		  FontSize		  12
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
 	      Name		      "FA_TQ_to_F_BRAKE"
 	      SID		      "8040"
 	      Ports		      [1, 1]
@@ -15239,7 +16430,7 @@ Model {
 	      }
 	      System {
 		Name			"FA_TQ_to_F_BRAKE"
-		Location		[-8, -8, 1374, 736]
+		Location		[-8, -8, 1310, 776]
 		Open			off
 		PortBlocksUseCompactNotation off
 		SetExecutionDomain	off
@@ -15303,7 +16494,7 @@ Model {
 	      BlockType		      From
 	      Name		      "From"
 	      SID		      "8520"
-	      Position		      [-5, 148, 230, 172]
+	      Position		      [-5, 118, 230, 142]
 	      ZOrder		      54
 	      GotoTag		      "CMD_FA_MECHANICAL_BRAKE"
 	      Port {
@@ -15315,7 +16506,7 @@ Model {
 	      BlockType		      From
 	      Name		      "From1"
 	      SID		      "8523"
-	      Position		      [1155, 681, 1195, 709]
+	      Position		      [1905, 681, 1945, 709]
 	      ZOrder		      57
 	      GotoTag		      "PLA_N"
 	    }
@@ -15343,24 +16534,28 @@ Model {
 	      BlockType		      From
 	      Name		      "From12"
 	      SID		      "8559"
-	      Position		      [1155, 766, 1225, 794]
+	      Position		      [1905, 766, 1975, 794]
 	      ZOrder		      82
-	      GotoTag		      "FA_N_ICE"
+	      GotoTag		      "FA_N"
 	    }
 	    Block {
 	      BlockType		      From
 	      Name		      "From13"
-	      SID		      "8561"
-	      Position		      [980, 576, 1070, 604]
-	      ZOrder		      84
-	      GotoTag		      "FA_TQ_CLU"
+	      SID		      "9347"
+	      Position		      [-5, 203, 230, 227]
+	      ZOrder		      163
+	      GotoTag		      "CMD_RA_MECHANICAL_BRAKE"
+	      Port {
+		PortNumber		1
+		Name			"CMD_FA_MECHANICAL_BRAKE"
+	      }
 	    }
 	    Block {
 	      BlockType		      From
 	      Name		      "From14"
 	      SID		      "8573"
-	      Position		      [100, 749, 185, 771]
-	      ZOrder		      89
+	      Position		      [-75, 1124, 10, 1146]
+	      ZOrder		      142
 	      NamePlacement	      "alternate"
 	      GotoTag		      "FA_N_BGX"
 	    }
@@ -15368,7 +16563,7 @@ Model {
 	      BlockType		      From
 	      Name		      "From15"
 	      SID		      "8576"
-	      Position		      [1155, 596, 1260, 624]
+	      Position		      [1905, 596, 2010, 624]
 	      ZOrder		      92
 	      GotoTag		      "DRI_GBX_SP"
 	    }
@@ -15376,8 +16571,8 @@ Model {
 	      BlockType		      From
 	      Name		      "From16"
 	      SID		      "8595"
-	      Position		      [100, 710, 180, 730]
-	      ZOrder		      96
+	      Position		      [-75, 1085, 5, 1105]
+	      ZOrder		      144
 	      NamePlacement	      "alternate"
 	      GotoTag		      "FA_TQ_ICE"
 	    }
@@ -15385,8 +16580,8 @@ Model {
 	      BlockType		      From
 	      Name		      "From17"
 	      SID		      "8596"
-	      Position		      [100, 789, 230, 811]
-	      ZOrder		      97
+	      Position		      [-75, 1164, 55, 1186]
+	      ZOrder		      145
 	      NamePlacement	      "alternate"
 	      GotoTag		      "CMD_CLUTCH_SP"
 	    }
@@ -15394,10 +16589,18 @@ Model {
 	      BlockType		      From
 	      Name		      "From18"
 	      SID		      "8597"
-	      Position		      [100, 830, 190, 850]
-	      ZOrder		      98
+	      Position		      [-75, 1205, 15, 1225]
+	      ZOrder		      146
 	      NamePlacement	      "alternate"
 	      GotoTag		      "DRI_GBX_SP"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From19"
+	      SID		      "9299"
+	      Position		      [10, 751, 125, 779]
+	      ZOrder		      113
+	      GotoTag		      "CMD_RA_TQ_SP"
 	    }
 	    Block {
 	      BlockType		      From
@@ -15406,6 +16609,99 @@ Model {
 	      Position		      [155, 306, 260, 334]
 	      ZOrder		      63
 	      GotoTag		      "CMD_FA_TQ_SP"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From20"
+	      SID		      "9300"
+	      Position		      [10, 851, 155, 879]
+	      ZOrder		      114
+	      GotoTag		      "SYSE_VOLTAGE_HV"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From21"
+	      SID		      "9301"
+	      Position		      [215, 1308, 420, 1342]
+	      ZOrder		      115
+	      GotoTag		      "CMD_RA_MECHANICAL_BRAKE"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From22"
+	      SID		      "9344"
+	      Position		      [850, 1205, 930, 1225]
+	      ZOrder		      162
+	      NamePlacement	      "alternate"
+	      GotoTag		      "RA_TQ"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From23"
+	      SID		      "9303"
+	      Position		      [-870, 1126, -770, 1154]
+	      ZOrder		      121
+	      GotoTag		      "RA_TQ"
+	      Port {
+		PortNumber		1
+		Name			"RA_TQ"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From24"
+	      SID		      "9304"
+	      Position		      [-870, 1171, -755, 1209]
+	      ZOrder		      122
+	      GotoTag		      "RA_TQ_MINMAX"
+	      Port {
+		PortNumber		1
+		Name			"RA_TQ_MINMAX"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From25"
+	      SID		      "9305"
+	      Position		      [-870, 1228, -755, 1252]
+	      ZOrder		      123
+	      GotoTag		      "RA_EM_CURRENT"
+	      Port {
+		PortNumber		1
+		Name			"RA_EM_CURRENT"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From26"
+	      SID		      "9306"
+	      Position		      [-870, 1276, -765, 1304]
+	      ZOrder		      124
+	      GotoTag		      "RA_N_EM"
+	      Port {
+		PortNumber		1
+		Name			"RA_N_EM"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From27"
+	      SID		      "9307"
+	      Position		      [-870, 1328, -755, 1352]
+	      ZOrder		      125
+	      GotoTag		      "RA_PLA_F_BRAKE"
+	      Port {
+		PortNumber		1
+		Name			"RA_PLA_F_BRAKE"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From28"
+	      SID		      "9308"
+	      Position		      [10, 803, 105, 827]
+	      ZOrder		      127
+	      GotoTag		      "RA_N_EM"
 	    }
 	    Block {
 	      BlockType		      From
@@ -15427,7 +16723,7 @@ Model {
 	      BlockType		      From
 	      Name		      "From5"
 	      SID		      "9185"
-	      Position		      [-475, 628, -310, 662]
+	      Position		      [-870, 873, -705, 907]
 	      ZOrder		      102
 	      GotoTag		      "FA_GAS_CONSUMPTION"
 	      Port {
@@ -15439,7 +16735,7 @@ Model {
 	      BlockType		      From
 	      Name		      "From6"
 	      SID		      "8537"
-	      Position		      [-475, 678, -350, 702]
+	      Position		      [-870, 928, -745, 952]
 	      ZOrder		      71
 	      GotoTag		      "FA_TQ_MINMAX"
 	      Port {
@@ -15451,7 +16747,7 @@ Model {
 	      BlockType		      From
 	      Name		      "From7"
 	      SID		      "8539"
-	      Position		      [-475, 723, -410, 747]
+	      Position		      [-870, 978, -805, 1002]
 	      ZOrder		      73
 	      GotoTag		      "FA_TQ"
 	      Port {
@@ -15463,7 +16759,7 @@ Model {
 	      BlockType		      From
 	      Name		      "From8"
 	      SID		      "8541"
-	      Position		      [-475, 763, -410, 797]
+	      Position		      [-870, 1023, -805, 1057]
 	      ZOrder		      75
 	      GotoTag		      "FA_N_ICE"
 	      Port {
@@ -15475,7 +16771,7 @@ Model {
 	      BlockType		      From
 	      Name		      "From9"
 	      SID		      "8543"
-	      Position		      [-475, 813, -360, 837]
+	      Position		      [-870, 1078, -755, 1102]
 	      ZOrder		      77
 	      GotoTag		      "FA_PLA_BRAKE"
 	      Port {
@@ -15485,10 +16781,78 @@ Model {
 	      }
 	    }
 	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain2"
+	      SID		      "9336"
+	      Position		      [1164, 610, 1246, 685]
+	      ZOrder		      153
+	      BlockRotation	      270
+	      Gain		      "1-PR_TQ_ICE"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain3"
+	      SID		      "9337"
+	      Position		      [1249, 555, 1331, 630]
+	      ZOrder		      154
+	      BlockRotation	      270
+	      Gain		      "1-PR_TQ_ICE"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain4"
+	      SID		      "9338"
+	      Position		      [990, 442, 1085, 478]
+	      ZOrder		      156
+	      Gain		      "PR_TQ_ICE"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain5"
+	      SID		      "9339"
+	      Position		      [990, 507, 1085, 543]
+	      ZOrder		      157
+	      Gain		      "PR_TQ_ICE"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain6"
+	      SID		      "9342"
+	      Position		      [965, 1127, 1065, 1183]
+	      ZOrder		      160
+	      Gain		      "PR_TQ_ICE"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain7"
+	      SID		      "9343"
+	      Position		      [970, 1192, 1065, 1238]
+	      ZOrder		      161
+	      Gain		      "1-PR_TQ_ICE"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
 	      BlockType		      Goto
 	      Name		      "Goto"
 	      SID		      "8519"
-	      Position		      [-280, 545, -90, 575]
+	      Position		      [-735, 565, -545, 595]
 	      ZOrder		      53
 	      GotoTag		      "CMD_FA_MECHANICAL_BRAKE"
 	    }
@@ -15496,7 +16860,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto1"
 	      SID		      "8522"
-	      Position		      [-165, 495, -90, 525]
+	      Position		      [-735, 490, -660, 520]
 	      ZOrder		      56
 	      GotoTag		      "PLA_N"
 	    }
@@ -15512,25 +16876,16 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto11"
 	      SID		      "8556"
-	      Position		      [810, 819, 925, 841]
-	      ZOrder		      79
+	      Position		      [635, 1194, 750, 1216]
+	      ZOrder		      140
 	      NamePlacement	      "alternate"
 	      GotoTag		      "FA_CLU_STUCK"
 	    }
 	    Block {
 	      BlockType		      Goto
-	      Name		      "Goto12"
-	      SID		      "8560"
-	      Position		      [820, 767, 920, 793]
-	      ZOrder		      83
-	      NamePlacement	      "alternate"
-	      GotoTag		      "FA_TQ_CLU"
-	    }
-	    Block {
-	      BlockType		      Goto
 	      Name		      "Goto13"
 	      SID		      "8570"
-	      Position		      [2125, 720, 2210, 750]
+	      Position		      [2875, 720, 2960, 750]
 	      ZOrder		      86
 	      GotoTag		      "FA_N_BGX"
 	    }
@@ -15544,17 +16899,65 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Goto
+	      Name		      "Goto15"
+	      SID		      "9309"
+	      Position		      [-740, 762, -615, 788]
+	      ZOrder		      109
+	      GotoTag		      "CMD_RA_TQ_SP"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto16"
+	      SID		      "9310"
+	      Position		      [-725, 697, -600, 723]
+	      ZOrder		      110
+	      GotoTag		      "SYSE_VOLTAGE_HV"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto17"
+	      SID		      "9311"
+	      Position		      [-740, 634, -540, 656]
+	      ZOrder		      111
+	      GotoTag		      "CMD_RA_MECHANICAL_BRAKE"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto19"
+	      SID		      "9313"
+	      Position		      [905, 777, 990, 813]
+	      ZOrder		      131
+	      GotoTag		      "RA_TQ"
+	    }
+	    Block {
+	      BlockType		      Goto
 	      Name		      "Goto2"
 	      SID		      "8524"
-	      Position		      [-210, 442, -90, 478]
+	      Position		      [-740, 412, -620, 448]
 	      ZOrder		      58
 	      GotoTag		      "FA_START_ICE"
 	    }
 	    Block {
 	      BlockType		      Goto
+	      Name		      "Goto21"
+	      SID		      "9315"
+	      Position		      [890, 718, 1010, 762]
+	      ZOrder		      119
+	      GotoTag		      "RA_EM_CURRENT"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto22"
+	      SID		      "9316"
+	      Position		      [910, 1307, 1060, 1343]
+	      ZOrder		      120
+	      GotoTag		      "RA_PLA_F_BRAKE"
+	    }
+	    Block {
+	      BlockType		      Goto
 	      Name		      "Goto3"
 	      SID		      "8525"
-	      Position		      [-220, 395, -90, 425]
+	      Position		      [-745, 360, -615, 390]
 	      ZOrder		      59
 	      GotoTag		      "CMD_CLUTCH_SP"
 	    }
@@ -15562,7 +16965,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto4"
 	      SID		      "8527"
-	      Position		      [-185, 347, -90, 373]
+	      Position		      [-745, 307, -650, 333]
 	      ZOrder		      61
 	      GotoTag		      "DRI_GBX_SP"
 	    }
@@ -15570,7 +16973,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto5"
 	      SID		      "8528"
-	      Position		      [-200, 295, -90, 325]
+	      Position		      [-745, 250, -635, 280]
 	      ZOrder		      62
 	      GotoTag		      "CMD_FA_TQ_SP"
 	    }
@@ -15586,7 +16989,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto7"
 	      SID		      "8536"
-	      Position		      [2090, 535, 2210, 565]
+	      Position		      [2875, 535, 2995, 565]
 	      ZOrder		      70
 	      GotoTag		      "FA_TQ_MINMAX"
 	    }
@@ -15594,7 +16997,7 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto8"
 	      SID		      "8538"
-	      Position		      [2125, 597, 2210, 623]
+	      Position		      [2875, 597, 2960, 623]
 	      ZOrder		      72
 	      GotoTag		      "FA_TQ"
 	    }
@@ -15602,10 +17005,10 @@ Model {
 	      BlockType		      Goto
 	      Name		      "Goto9"
 	      SID		      "8540"
-	      Position		      [825, 720, 910, 740]
-	      ZOrder		      74
+	      Position		      [650, 1095, 735, 1115]
+	      ZOrder		      138
 	      NamePlacement	      "alternate"
-	      GotoTag		      "FA_N_ICE"
+	      GotoTag		      "FA_N"
 	    }
 	    Block {
 	      BlockType		      SubSystem
@@ -16399,7 +17802,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[2 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -18652,7 +20055,7 @@ Model {
 		    FunctionName	    "sf_sfun"
 		    PortCounts		    "[7 2]"
 		    SFunctionDeploymentMode off
-		    EnableBusSupport	    off
+		    EnableBusSupport	    on
 		    SFcnIsStateOwnerBlock   off
 		    Port {
 		    PortNumber		    2
@@ -21675,7 +23078,7 @@ Model {
 	      Name		      "Mux"
 	      SID		      "8277"
 	      Ports		      [3, 1]
-	      Position		      [1090, 430, 1095, 620]
+	      Position		      [1485, 415, 1490, 865]
 	      ZOrder		      -13
 	      ShowName		      off
 	      Inputs		      "3"
@@ -21684,6 +23087,132 @@ Model {
 		PortNumber		1
 		Name			"FA_TQ_AND_MINMAX_ICE"
 	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "RA_TQ_to_F_BRAKE"
+	      SID		      "9318"
+	      Ports		      [1, 1]
+	      Position		      [520, 1279, 785, 1371]
+	      ZOrder		      106
+	      RequestExecContextInheritance off
+	      System {
+		Name			"RA_TQ_to_F_BRAKE"
+		Location		[-8, -8, 1374, 736]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "CMD_RA_MECANICAL_BRAKE"
+		  SID			  "9319"
+		  Position		  [65, 43, 95, 57]
+		  ZOrder		  3
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "Gain"
+		  SID			  "9320"
+		  Position		  [205, 20, 345, 80]
+		  ZOrder		  2
+		  Gain			  "1/pla_wheel_radius"
+		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "RA_PLA_F_BRAKE"
+		  SID			  "9321"
+		  Position		  [530, 43, 560, 57]
+		  ZOrder		  4
+		  NamePlacement		  "alternate"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "CMD_RA_MECANICAL_BRAKE"
+		  SrcPort		  1
+		  DstBlock		  "Gain"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "Gain"
+		  SrcPort		  1
+		  DstBlock		  "RA_PLA_F_BRAKE"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      SID		      "9333"
+	      Ports		      [2, 1]
+	      Position		      [1195, 515, 1215, 535]
+	      ZOrder		      151
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum2"
+	      SID		      "9334"
+	      Ports		      [2, 1]
+	      Position		      [1280, 450, 1300, 470]
+	      ZOrder		      152
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum3"
+	      SID		      "9340"
+	      Ports		      [2, 1]
+	      Position		      [1095, 1145, 1115, 1165]
+	      ZOrder		      158
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum4"
+	      SID		      "9348"
+	      Ports		      [2, 1]
+	      Position		      [315, 120, 335, 140]
+	      ZOrder		      164
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
 	      BlockType		      Terminator
@@ -21697,13 +23226,13 @@ Model {
 	      Name		      "gearbox + differential"
 	      SID		      "8279"
 	      Ports		      [1, 1]
-	      Position		      [1390, 487, 1710, 823]
+	      Position		      [2140, 487, 2460, 823]
 	      ZOrder		      40
 	      BackgroundColor	      "yellow"
 	      RequestExecContextInheritance off
 	      System {
 		Name			"gearbox + differential"
-		Location		[-8, 0, 1374, 744]
+		Location		[-8, -8, 1310, 776]
 		Open			off
 		PortBlocksUseCompactNotation off
 		SetExecutionDomain	off
@@ -22269,7 +23798,7 @@ Model {
 	      BlockType		      Outport
 	      Name		      "Output_Bus_Front_Axle"
 	      SID		      "8533"
-	      Position		      [-35, 728, -5, 742]
+	      Position		      [-500, 1108, -470, 1122]
 	      ZOrder		      67
 	      IconDisplay	      "Port number"
 	    }
@@ -22317,15 +23846,6 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      Name		      "<FA_TQ_CLU>"
-	      ZOrder		      97
-	      Labels		      [1, 0]
-	      SrcBlock		      "Bus\nSelector1"
-	      SrcPort		      2
-	      DstBlock		      "Goto12"
-	      DstPort		      1
-	    }
-	    Line {
 	      Name		      "FA_CLU_STUCK"
 	      ZOrder		      101
 	      Labels		      [-1, 0]
@@ -22333,15 +23853,6 @@ Model {
 	      SrcPort		      1
 	      DstBlock		      "Bus\nCreator1"
 	      DstPort		      5
-	    }
-	    Line {
-	      Name		      "CMD_FA_MECHANICAL_BRAKE"
-	      ZOrder		      62
-	      Labels		      [1, 1]
-	      SrcBlock		      "From"
-	      SrcPort		      1
-	      DstBlock		      "FA_TQ_to_F_BRAKE"
-	      DstPort		      1
 	    }
 	    Line {
 	      Name		      "FA_PLA_F_BRAKE"
@@ -22373,27 +23884,30 @@ Model {
 	    Line {
 	      Name		      "<PLA_N>"
 	      ZOrder		      64
-	      Labels		      [1, 1]
+	      Labels		      [2, 1]
 	      SrcBlock		      "Bus\nSelector"
 	      SrcPort		      5
+	      Points		      [77, 0; 0, -10]
 	      DstBlock		      "Goto1"
 	      DstPort		      1
 	    }
 	    Line {
 	      Name		      "<FA_START_ICE>"
 	      ZOrder		      67
-	      Labels		      [1, 1]
+	      Labels		      [2, 1]
 	      SrcBlock		      "Bus\nSelector"
 	      SrcPort		      4
+	      Points		      [77, 0; 0, -20]
 	      DstBlock		      "Goto2"
 	      DstPort		      1
 	    }
 	    Line {
 	      Name		      "<CMD_CLUTCH_SP>"
 	      ZOrder		      69
-	      Labels		      [1, 1]
+	      Labels		      [2, 1]
 	      SrcBlock		      "Bus\nSelector"
 	      SrcPort		      3
+	      Points		      [75, 0; 0, -10]
 	      DstBlock		      "Goto3"
 	      DstPort		      1
 	    }
@@ -22409,9 +23923,10 @@ Model {
 	    Line {
 	      Name		      "<CMD_FA_TQ_SP>"
 	      ZOrder		      75
-	      Labels		      [1, 1]
+	      Labels		      [2, 1]
 	      SrcBlock		      "Bus\nSelector"
 	      SrcPort		      1
+	      Points		      [75, 0; 0, 10]
 	      DstBlock		      "Goto5"
 	      DstPort		      1
 	    }
@@ -22500,45 +24015,11 @@ Model {
 	      DstPort		      5
 	    }
 	    Line {
-	      Name		      "OB_CLU"
-	      ZOrder		      95
-	      Labels		      [1, 1]
-	      SrcBlock		      "Clutch"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nSelector1"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "<FA_CLU_STUCK>"
-	      ZOrder		      100
-	      Labels		      [1, 0]
-	      SrcBlock		      "Bus\nSelector1"
-	      SrcPort		      3
-	      DstBlock		      "Goto11"
-	      DstPort		      1
-	    }
-	    Line {
 	      ZOrder		      102
 	      SrcBlock		      "From11"
 	      SrcPort		      1
 	      DstBlock		      "Bus\nCreator1"
 	      DstPort		      6
-	    }
-	    Line {
-	      Name		      "<FA_N_ICE>"
-	      ZOrder		      121
-	      Labels		      [1, 0]
-	      SrcBlock		      "Bus\nSelector1"
-	      SrcPort		      1
-	      DstBlock		      "Goto9"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      122
-	      SrcBlock		      "From13"
-	      SrcPort		      1
-	      DstBlock		      "Mux"
-	      DstPort		      3
 	    }
 	    Line {
 	      ZOrder		      123
@@ -22559,9 +24040,10 @@ Model {
 	    Line {
 	      Name		      "FA_TQ_AND_MINMAX_ICE"
 	      ZOrder		      129
-	      Labels		      [1, 1]
+	      Labels		      [2, 1]
 	      SrcBlock		      "Mux"
 	      SrcPort		      1
+	      Points		      [203, 0; 0, -115]
 	      DstBlock		      "Bus\nCreator3"
 	      DstPort		      1
 	    }
@@ -22594,59 +24076,22 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      135
-	      SrcBlock		      "From14"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator4"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      136
-	      SrcBlock		      "From16"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator4"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      137
-	      SrcBlock		      "From17"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator4"
-	      DstPort		      3
-	    }
-	    Line {
-	      ZOrder		      138
-	      SrcBlock		      "From18"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator4"
-	      DstPort		      4
-	    }
-	    Line {
-	      Name		      "IB_CLU"
-	      ZOrder		      139
-	      Labels		      [1, 1]
-	      SrcBlock		      "Bus\nCreator4"
-	      SrcPort		      1
-	      DstBlock		      "Clutch"
-	      DstPort		      1
-	    }
-	    Line {
 	      Name		      "<FA_TQ_MAX_ICE>"
 	      ZOrder		      151
 	      Labels		      [1, 1]
 	      SrcBlock		      "Bus\nSelector3"
 	      SrcPort		      3
-	      DstBlock		      "Mux"
+	      DstBlock		      "Gain4"
 	      DstPort		      1
 	    }
 	    Line {
 	      Name		      "<FA_TQ_MIN_ICE>"
 	      ZOrder		      152
-	      Labels		      [1, 1]
+	      Labels		      [0, 0]
 	      SrcBlock		      "Bus\nSelector3"
 	      SrcPort		      4
-	      DstBlock		      "Mux"
-	      DstPort		      2
+	      DstBlock		      "Gain5"
+	      DstPort		      1
 	    }
 	    Line {
 	      Name		      "IB_ICEG"
@@ -22693,10 +24138,364 @@ Model {
 	      DstBlock		      "Goto14"
 	      DstPort		      1
 	    }
+	    Line {
+	      Name		      "<RA_EM_CURRENT>"
+	      ZOrder		      236
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector5"
+	      SrcPort		      1
+	      Points		      [14, 0; 0, -20]
+	      DstBlock		      "Goto21"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IB_EM"
+	      ZOrder		      237
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nCreator7"
+	      SrcPort		      1
+	      DstBlock		      "Electrical machine"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      238
+	      SrcBlock		      "From19"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator7"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      239
+	      SrcBlock		      "From28"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator7"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      240
+	      SrcBlock		      "From20"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator7"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "RA_TQ_MINMAX"
+	      ZOrder		      264
+	      Labels		      [1, 1]
+	      SrcBlock		      "From24"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator2"
+	      DstPort		      7
+	    }
+	    Line {
+	      Name		      "<RA_TQ_ME>"
+	      ZOrder		      244
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector5"
+	      SrcPort		      2
+	      DstBlock		      "Goto19"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "RA_PLA_F_BRAKE"
+	      ZOrder		      261
+	      Labels		      [1, 1]
+	      SrcBlock		      "From27"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator2"
+	      DstPort		      10
+	    }
+	    Line {
+	      Name		      "RA_EM_CURRENT"
+	      ZOrder		      263
+	      Labels		      [1, 1]
+	      SrcBlock		      "From25"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator2"
+	      DstPort		      8
+	    }
+	    Line {
+	      Name		      "RA_TQ"
+	      ZOrder		      265
+	      Labels		      [1, 1]
+	      SrcBlock		      "From23"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator2"
+	      DstPort		      6
+	    }
+	    Line {
+	      ZOrder		      251
+	      SrcBlock		      "From21"
+	      SrcPort		      1
+	      DstBlock		      "RA_TQ_to_F_BRAKE"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "RA_N_EM"
+	      ZOrder		      262
+	      Labels		      [1, 1]
+	      SrcBlock		      "From26"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator2"
+	      DstPort		      9
+	    }
+	    Line {
+	      ZOrder		      253
+	      SrcBlock		      "RA_TQ_to_F_BRAKE"
+	      SrcPort		      1
+	      DstBlock		      "Goto22"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "OB_EM"
+	      ZOrder		      258
+	      Labels		      [0, 0]
+	      SrcBlock		      "Electrical machine"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nSelector5"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<SYSE_VOLTAGE_HV (signal 9)>"
+	      ZOrder		      270
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      8
+	      DstBlock		      "Goto16"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<CMD_FA_MECHANICAL_BRAKE (signal 6)>"
+	      ZOrder		      271
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      7
+	      DstBlock		      "Goto17"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<CMD_RA_TQ_SP (signal 8)>"
+	      ZOrder		      273
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector"
+	      SrcPort		      9
+	      DstBlock		      "Goto15"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "IB_CLU"
+	      ZOrder		      274
+	      Labels		      [1, 1]
+	      SrcBlock		      "Bus\nCreator4"
+	      SrcPort		      1
+	      DstBlock		      "Clutch"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      275
+	      SrcBlock		      "From14"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator4"
+	      DstPort		      2
+	    }
+	    Line {
+	      Name		      "<FA_CLU_STUCK>"
+	      ZOrder		      276
+	      Labels		      [1, 0]
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      3
+	      DstBlock		      "Goto11"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      278
+	      SrcBlock		      "From17"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator4"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "<FA_N_ICE>"
+	      ZOrder		      279
+	      Labels		      [1, 0]
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      1
+	      DstBlock		      "Goto9"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "OB_CLU"
+	      ZOrder		      280
+	      Labels		      [1, 1]
+	      SrcBlock		      "Clutch"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nSelector1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      281
+	      SrcBlock		      "From18"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator4"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      325
+	      SrcBlock		      "From16"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator4"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      327
+	      SrcBlock		      "Sum3"
+	      SrcPort		      1
+	      Points		      [267, 0; 0, -365]
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "<RA_TQ_MIN_ME>"
+	      ZOrder		      297
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector5"
+	      SrcPort		      3
+	      Points		      [480, 0]
+	      DstBlock		      "Gain2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<RA_TQ_MAX_ME>"
+	      ZOrder		      304
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector5"
+	      SrcPort		      4
+	      Points		      [565, 0]
+	      DstBlock		      "Gain3"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      308
+	      SrcBlock		      "Sum2"
+	      SrcPort		      1
+	      Points		      [88, 0; 0, 30]
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      309
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      Points		      [167, 0; 0, 115]
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      314
+	      SrcBlock		      "Gain2"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      315
+	      SrcBlock		      "Gain3"
+	      SrcPort		      1
+	      DstBlock		      "Sum2"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      316
+	      SrcBlock		      "Gain4"
+	      SrcPort		      1
+	      DstBlock		      "Sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      317
+	      SrcBlock		      "Gain5"
+	      SrcPort		      1
+	      DstBlock		      "Sum1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<FA_TQ_CLU>"
+	      ZOrder		      318
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      2
+	      DstBlock		      "Gain6"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      322
+	      SrcBlock		      "Gain6"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      323
+	      SrcBlock		      "Gain7"
+	      SrcPort		      1
+	      Points		      [35, 0]
+	      DstBlock		      "Sum3"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      324
+	      SrcBlock		      "From22"
+	      SrcPort		      1
+	      DstBlock		      "Gain7"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      328
+	      SrcBlock		      "Sum4"
+	      SrcPort		      1
+	      Points		      [40, 0; 0, 30]
+	      DstBlock		      "FA_TQ_to_F_BRAKE"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "CMD_FA_MECHANICAL_BRAKE"
+	      ZOrder		      329
+	      Labels		      [0, 0]
+	      SrcBlock		      "From13"
+	      SrcPort		      1
+	      Points		      [90, 0]
+	      DstBlock		      "Sum4"
+	      DstPort		      2
+	    }
+	    Line {
+	      Name		      "CMD_FA_MECHANICAL_BRAKE"
+	      ZOrder		      330
+	      Labels		      [-1, 1]
+	      SrcBlock		      "From"
+	      SrcPort		      1
+	      DstBlock		      "Sum4"
+	      DstPort		      1
+	    }
+	    Annotation {
+	      SID		      "9335"
+	      Name		      "ici PR_TQ_ICE = proportion du couple fournit par le moteur termique"
+	      Position		      [850, 1098, 1155, 1112]
+	      InternalMargins	      [0, 0, 0, 0]
+	      HorizontalAlignment     "left"
+	      VerticalAlignment	      "top"
+	    }
+	    Annotation {
+	      SID		      "9332"
+	      Name		      "il y a une modif a faire car somme vitesse\n"
+	      Position		      [666, 1060, 851, 1086]
+	      InternalMargins	      [0, 0, 0, 0]
+	      HorizontalAlignment     "left"
+	      VerticalAlignment	      "top"
+	    }
 	    Annotation {
 	      SID		      "8545"
 	      Name		      "Bus Area"
-	      Position		      [-590, 240, 60, 894]
+	      Position		      [-1030, 185, -360, 1439]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      on
 	      FixedWidth	      on
@@ -22706,7 +24505,7 @@ Model {
 	      BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
 	      DropShadow	      on
 	      AnnotationType	      "area_annotation"
-	      ZOrder		      294
+	      ZOrder		      464
 	      FontName		      "Arial"
 	      FontSize		      12
 	    }
@@ -22884,16 +24683,6 @@ Model {
 	}
 	Block {
 	  BlockType		  Goto
-	  Name			  "Goto29"
-	  SID			  "8899"
-	  Position		  [1985, 599, 2090, 631]
-	  ZOrder		  406
-	  ForegroundColor	  "orange"
-	  ShowName		  off
-	  GotoTag		  "RA_TQ"
-	}
-	Block {
-	  BlockType		  Goto
 	  Name			  "Goto3"
 	  SID			  "8311"
 	  Position		  [1985, 1269, 2090, 1301]
@@ -22916,31 +24705,11 @@ Model {
 	  BlockType		  Goto
 	  Name			  "Goto31"
 	  SID			  "8901"
-	  Position		  [1985, 699, 2090, 731]
+	  Position		  [1895, 544, 2000, 576]
 	  ZOrder		  404
 	  ForegroundColor	  "orange"
 	  ShowName		  off
 	  GotoTag		  "RA_EM_CURRENT"
-	}
-	Block {
-	  BlockType		  Goto
-	  Name			  "Goto32"
-	  SID			  "8902"
-	  Position		  [1985, 799, 2090, 831]
-	  ZOrder		  410
-	  ForegroundColor	  "orange"
-	  ShowName		  off
-	  GotoTag		  "RA_PLA_F_BRAKE"
-	}
-	Block {
-	  BlockType		  Goto
-	  Name			  "Goto33"
-	  SID			  "8903"
-	  Position		  [1985, 649, 2090, 681]
-	  ZOrder		  403
-	  ForegroundColor	  "darkGreen"
-	  ShowName		  off
-	  GotoTag		  "RA_TQ_MINMAX"
 	}
 	Block {
 	  BlockType		  Goto
@@ -23007,7 +24776,7 @@ Model {
 	  }
 	  System {
 	    Name		    "Platform"
-	    Location		    [676, 0, 1373, 735]
+	    Location		    [-8, -8, 1310, 776]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
@@ -23022,7 +24791,7 @@ Model {
 	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "80"
+	    ZoomFactor		    "100"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Input_Bus_Platform"
@@ -23119,7 +24888,7 @@ Model {
 	      RequestExecContextInheritance off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		33
+		$ObjectID		34
 		$ClassName		"Simulink.Mask"
 		Display			"fprintf('DOC')"
 	      }
@@ -23147,17 +24916,9 @@ Model {
 	      BlockType		      From
 	      Name		      "From"
 	      SID		      "9027"
-	      Position		      [-15, -124, 40, -96]
+	      Position		      [-20, -89, 35, -61]
 	      ZOrder		      11
 	      GotoTag		      "FA_TQ"
-	    }
-	    Block {
-	      BlockType		      From
-	      Name		      "From1"
-	      SID		      "9028"
-	      Position		      [-15, -74, 40, -46]
-	      ZOrder		      12
-	      GotoTag		      "RA_TQ"
 	    }
 	    Block {
 	      BlockType		      From
@@ -23286,7 +25047,7 @@ Model {
 	      RequestExecContextInheritance off
 	      System {
 		Name			"Mechanical behavior"
-		Location		[676, 0, 1373, 735]
+		Location		[-8, -8, 1310, 776]
 		Open			off
 		PortBlocksUseCompactNotation off
 		SetExecutionDomain	off
@@ -24722,20 +26483,6 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Sum
-	      Name		      "Sum"
-	      SID		      "8394"
-	      Ports		      [2, 1]
-	      Position		      [200, -95, 220, -55]
-	      ZOrder		      -9
-	      ShowName		      off
-	      Inputs		      "+|+"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	      SampleTime	      "hev_dt"
-	    }
-	    Block {
-	      BlockType		      Sum
 	      Name		      "Sum1"
 	      SID		      "8395"
 	      Ports		      [2, 1]
@@ -24837,25 +26584,10 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      10
-	      SrcBlock		      "Sum"
-	      SrcPort		      1
-	      DstBlock		      "Mechanical behavior"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      29
-	      SrcBlock		      "From1"
-	      SrcPort		      1
-	      DstBlock		      "Sum"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      28
+	      ZOrder		      56
 	      SrcBlock		      "From"
 	      SrcPort		      1
-	      Points		      [75, 0; 0, 20]
-	      DstBlock		      "Sum"
+	      DstBlock		      "Mechanical behavior"
 	      DstPort		      1
 	    }
 	    Line {
@@ -24975,2345 +26707,9 @@ Model {
 	      BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
 	      DropShadow	      on
 	      AnnotationType	      "area_annotation"
-	      ZOrder		      3
+	      ZOrder		      4
 	      FontName		      "Arial"
 	      FontSize		      12
-	    }
-	  }
-	}
-	Block {
-	  BlockType		  SubSystem
-	  Name			  "Rear Axle1"
-	  SID			  "8904"
-	  Ports			  [1, 1]
-	  Position		  [1435, 596, 1750, 834]
-	  ZOrder		  402
-	  BackgroundColor	  "yellow"
-	  RequestExecContextInheritance	off
-	  Port {
-	    PortNumber		    1
-	    Name		    "OB_RA"
-	  }
-	  System {
-	    Name		    "Rear Axle1"
-	    Location		    [676, 0, 1373, 735]
-	    Open		    off
-	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
-	    ModelBrowserVisibility  off
-	    ModelBrowserWidth	    200
-	    ScreenColor		    "white"
-	    PaperOrientation	    "landscape"
-	    PaperPositionMode	    "auto"
-	    PaperType		    "A4"
-	    PaperUnits		    "centimeters"
-	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
-	    TiledPageScale	    1
-	    ShowPageBoundaries	    off
-	    ZoomFactor		    "60"
-	    Block {
-	      BlockType		      Inport
-	      Name		      "Inuput_Bus_Rear_Axle\n"
-	      SID		      "8905"
-	      Position		      [215, 548, 245, 562]
-	      ZOrder		      5
-	      IconDisplay	      "Port number"
-	      Port {
-		PortNumber		1
-		Name			"IB_RA"
-		PropagatedSignals	"IB_RA"
-	      }
-	    }
-	    Block {
-	      BlockType		      BusCreator
-	      Name		      "Bus\nCreator"
-	      SID		      "8906"
-	      Ports		      [2, 1]
-	      Position		      [1570, 102, 1575, 153]
-	      ZOrder		      -4
-	      ShowName		      off
-	      Inputs		      "2"
-	      DisplayOption	      "bar"
-	      InheritFromInputs	      on
-	    }
-	    Block {
-	      BlockType		      BusCreator
-	      Name		      "Bus\nCreator1"
-	      SID		      "8907"
-	      Ports		      [5, 1]
-	      Position		      [1020, 461, 1030, 709]
-	      ZOrder		      16
-	      ShowName		      off
-	      Inputs		      "5"
-	      DisplayOption	      "bar"
-	      InheritFromInputs	      on
-	      Port {
-		PortNumber		1
-		Name			"OB_RA"
-	      }
-	    }
-	    Block {
-	      BlockType		      BusCreator
-	      Name		      "Bus\nCreator2"
-	      SID		      "8908"
-	      Ports		      [2, 1]
-	      Position		      [995, 76, 1000, 234]
-	      ZOrder		      32
-	      ShowName		      off
-	      Inputs		      "2"
-	      DisplayOption	      "bar"
-	      InheritFromInputs	      on
-	      Port {
-		PortNumber		1
-		Name			"IB_DIFF"
-	      }
-	    }
-	    Block {
-	      BlockType		      BusCreator
-	      Name		      "Bus\nCreator3"
-	      SID		      "8909"
-	      Ports		      [3, 1]
-	      Position		      [810, 63, 815, 167]
-	      ZOrder		      35
-	      ShowName		      off
-	      Inputs		      "3"
-	      DisplayOption	      "bar"
-	      InheritFromInputs	      on
-	      Port {
-		PortNumber		1
-		Name			"RA_TQ_&_MINMAX_ME"
-	      }
-	    }
-	    Block {
-	      BlockType		      BusCreator
-	      Name		      "Bus\nCreator4"
-	      SID		      "8910"
-	      Ports		      [3, 1]
-	      Position		      [190, 23, 195, 177]
-	      ZOrder		      37
-	      ShowName		      off
-	      Inputs		      "3"
-	      DisplayOption	      "bar"
-	      InheritFromInputs	      on
-	      Port {
-		PortNumber		1
-		Name			"IB_EM"
-	      }
-	    }
-	    Block {
-	      BlockType		      BusSelector
-	      Name		      "Bus\nSelector"
-	      SID		      "8911"
-	      Ports		      [1, 4]
-	      Position		      [325, 463, 330, 642]
-	      ZOrder		      6
-	      ShowName		      off
-	      OutputSignals	      "CMD_RA_TQ_SP,SYSE_VOLTAGE_HV,CMD_RA_MECHANICAL_BRAKE,PLA_N"
-	      OutputAsBus	      off
-	      Port {
-		PortNumber		1
-		Name			"<CMD_RA_TQ_SP>"
-	      }
-	      Port {
-		PortNumber		2
-		Name			"<SYSE_VOLTAGE_HV>"
-	      }
-	      Port {
-		PortNumber		3
-		Name			"<CMD_RA_MECHANICAL_BRAKE>"
-	      }
-	      Port {
-		PortNumber		4
-		Name			"<PLA_N>"
-	      }
-	    }
-	    Block {
-	      BlockType		      BusSelector
-	      Name		      "Bus\nSelector1"
-	      SID		      "8912"
-	      Ports		      [1, 2]
-	      Position		      [1330, 75, 1335, 235]
-	      ZOrder		      31
-	      ShowName		      off
-	      OutputSignals	      "RA_TQ_&_MINMAX,RA_N_EM"
-	      OutputAsBus	      off
-	      Port {
-		PortNumber		1
-		Name			"<RA_TQ_&_MINMAX>"
-	      }
-	      Port {
-		PortNumber		2
-		Name			"<RA_N_EM>"
-	      }
-	    }
-	    Block {
-	      BlockType		      BusSelector
-	      Name		      "Bus\nSelector2"
-	      SID		      "8913"
-	      Ports		      [1, 4]
-	      Position		      [575, 22, 580, 173]
-	      ZOrder		      33
-	      ShowName		      off
-	      OutputSignals	      "RA_EM_CURRENT,RA_TQ_ME,RA_TQ_MIN_ME,RA_TQ_MAX_ME"
-	      OutputAsBus	      off
-	      Port {
-		PortNumber		1
-		Name			"<RA_EM_CURRENT>"
-	      }
-	      Port {
-		PortNumber		2
-		Name			"<RA_TQ_ME>"
-	      }
-	      Port {
-		PortNumber		3
-		Name			"<RA_TQ_MIN_ME>"
-	      }
-	      Port {
-		PortNumber		4
-		Name			"<RA_TQ_MAX_ME>"
-	      }
-	    }
-	    Block {
-	      BlockType		      Demux
-	      Name		      "Demux"
-	      SID		      "8914"
-	      Ports		      [1, 3]
-	      Position		      [1465, 80, 1470, 150]
-	      ZOrder		      -5
-	      ShowName		      off
-	      Outputs		      "3"
-	      DisplayOption	      "bar"
-	      Port {
-		PortNumber		2
-		Name			"RA_TQ_MIN"
-	      }
-	      Port {
-		PortNumber		3
-		Name			"RA_TQ_MAX"
-	      }
-	    }
-	    Block {
-	      BlockType		      SubSystem
-	      Name		      "Differential"
-	      SID		      "8915"
-	      Ports		      [1, 1]
-	      Position		      [1045, 77, 1285, 233]
-	      ZOrder		      -6
-	      BackgroundColor	      "yellow"
-	      RequestExecContextInheritance off
-	      Port {
-		PortNumber		1
-		Name			"OB_DIFF"
-	      }
-	      System {
-		Name			"Differential"
-		Location		[-8, -8, 1374, 736]
-		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
-		ModelBrowserVisibility	off
-		ModelBrowserWidth	200
-		ScreenColor		"white"
-		PaperOrientation	"landscape"
-		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
-		TiledPageScale		1
-		ShowPageBoundaries	off
-		ZoomFactor		"125"
-		Block {
-		  BlockType		  Inport
-		  Name			  "Input_Bus_Differential\n"
-		  SID			  "8916"
-		  Position		  [20, 158, 50, 172]
-		  ZOrder		  1
-		  IconDisplay		  "Port number"
-		  Port {
-		    PortNumber		    1
-		    Name		    "IB_DIFF"
-		    PropagatedSignals	    "IB_DIFF"
-		  }
-		}
-		Block {
-		  BlockType		  BusCreator
-		  Name			  "Bus\nCreator"
-		  SID			  "8917"
-		  Ports			  [2, 1]
-		  Position		  [730, 156, 735, 254]
-		  ZOrder		  3
-		  ShowName		  off
-		  Inputs		  "2"
-		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
-		  Port {
-		    PortNumber		    1
-		    Name		    "OB_DIFF"
-		  }
-		}
-		Block {
-		  BlockType		  BusSelector
-		  Name			  "Bus\nSelector"
-		  SID			  "8918"
-		  Ports			  [1, 2]
-		  Position		  [100, 136, 105, 189]
-		  ZOrder		  4
-		  ShowName		  off
-		  OutputSignals		  "RA_TQ_&_MINMAX_ME,PLA_N"
-		  OutputAsBus		  off
-		  Port {
-		    PortNumber		    1
-		    Name		    "<RA_TQ_&_MINMAX_ME>"
-		  }
-		  Port {
-		    PortNumber		    2
-		    Name		    "<PLA_N>"
-		  }
-		}
-		Block {
-		  BlockType		  Gain
-		  Name			  "Differential ratio"
-		  SID			  "8919"
-		  Position		  [555, 130, 585, 160]
-		  ZOrder		  -3
-		  Gain			  "ra_differential_ratio"
-		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
-		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-		  SaturateOnIntegerOverflow off
-		  SampleTime		  "hev_dt"
-		  Port {
-		    PortNumber		    1
-		    Name		    "RA_TQ_&_MINMAX"
-		  }
-		}
-		Block {
-		  BlockType		  Product
-		  Name			  "Divide1"
-		  SID			  "8920"
-		  Ports			  [2, 1]
-		  Position		  [330, 126, 360, 159]
-		  ZOrder		  -4
-		  InputSameDT		  off
-		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-		  RndMeth		  "Floor"
-		  SaturateOnIntegerOverflow off
-		  SampleTime		  "hev_dt"
-		}
-		Block {
-		  BlockType		  Gain
-		  Name			  "Efficiency P neg"
-		  SID			  "8921"
-		  Position		  [330, 179, 365, 211]
-		  ZOrder		  -5
-		  Gain			  "2-ra_transmission_efficiency"
-		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
-		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-		  SaturateOnIntegerOverflow off
-		  SampleTime		  "hev_dt"
-		}
-		Block {
-		  BlockType		  Gain
-		  Name			  "Efficiency P pos"
-		  SID			  "8922"
-		  Position		  [330, 69, 365, 101]
-		  ZOrder		  -6
-		  NamePlacement		  "alternate"
-		  Gain			  "ra_transmission_efficiency"
-		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
-		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-		  SaturateOnIntegerOverflow off
-		  SampleTime		  "hev_dt"
-		}
-		Block {
-		  BlockType		  Switch
-		  Name			  "Switch"
-		  SID			  "8923"
-		  Position		  [455, 125, 505, 165]
-		  ZOrder		  -7
-		  InputSameDT		  off
-		  SaturateOnIntegerOverflow off
-		  SampleTime		  "hev_dt"
-		}
-		Block {
-		  BlockType		  Gain
-		  Name			  "differential ratio"
-		  SID			  "8924"
-		  Position		  [455, 260, 485, 290]
-		  ZOrder		  -8
-		  Gain			  "ra_differential_ratio"
-		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
-		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-		  SaturateOnIntegerOverflow off
-		  SampleTime		  "hev_dt"
-		  Port {
-		    PortNumber		    1
-		    Name		    "RA_N_EM"
-		  }
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "Output_Bus_Differential"
-		  SID			  "8925"
-		  Position		  [790, 198, 820, 212]
-		  ZOrder		  2
-		  IconDisplay		  "Port number"
-		}
-		Line {
-		  ZOrder		  1
-		  SrcBlock		  "Efficiency P pos"
-		  SrcPort		  1
-		  Points		  [5, 0; 0, 45]
-		  DstBlock		  "Switch"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  2
-		  SrcBlock		  "Efficiency P neg"
-		  SrcPort		  1
-		  Points		  [5, 0; 0, -35]
-		  DstBlock		  "Switch"
-		  DstPort		  3
-		}
-		Line {
-		  ZOrder		  3
-		  SrcBlock		  "Divide1"
-		  SrcPort		  1
-		  DstBlock		  "Switch"
-		  DstPort		  2
-		}
-		Line {
-		  ZOrder		  4
-		  SrcBlock		  "Switch"
-		  SrcPort		  1
-		  DstBlock		  "Differential ratio"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "RA_TQ_&_MINMAX"
-		  ZOrder		  5
-		  Labels		  [3, 1]
-		  SrcBlock		  "Differential ratio"
-		  SrcPort		  1
-		  Points		  [31, 0; 0, 35]
-		  DstBlock		  "Bus\nCreator"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "RA_N_EM"
-		  ZOrder		  6
-		  Labels		  [3, 1]
-		  SrcBlock		  "differential ratio"
-		  SrcPort		  1
-		  Points		  [132, 0; 0, -45]
-		  DstBlock		  "Bus\nCreator"
-		  DstPort		  2
-		}
-		Line {
-		  Name			  "OB_DIFF"
-		  ZOrder		  7
-		  Labels		  [1, 0]
-		  SrcBlock		  "Bus\nCreator"
-		  SrcPort		  1
-		  DstBlock		  "Output_Bus_Differential"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "IB_DIFF"
-		  ZOrder		  8
-		  Labels		  [1, 0]
-		  SrcBlock		  "Input_Bus_Differential\n"
-		  SrcPort		  1
-		  DstBlock		  "Bus\nSelector"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "<PLA_N>"
-		  ZOrder		  9
-		  Labels		  [0, 0]
-		  SrcBlock		  "Bus\nSelector"
-		  SrcPort		  2
-		  Points		  [143, 0]
-		  Branch {
-		    ZOrder		    10
-		    Points		    [0, 100]
-		    DstBlock		    "differential ratio"
-		    DstPort		    1
-		  }
-		  Branch {
-		    ZOrder		    11
-		    Points		    [0, -40]
-		    DstBlock		    "Divide1"
-		    DstPort		    1
-		  }
-		}
-		Line {
-		  Name			  "<RA_TQ_&_MINMAX_ME>"
-		  ZOrder		  12
-		  Labels		  [0, 0]
-		  SrcBlock		  "Bus\nSelector"
-		  SrcPort		  1
-		  Points		  [182, 0]
-		  Branch {
-		    ZOrder		    13
-		    Points		    [0, 45]
-		    DstBlock		    "Efficiency P neg"
-		    DstPort		    1
-		  }
-		  Branch {
-		    ZOrder		    14
-		    DstBlock		    "Divide1"
-		    DstPort		    2
-		  }
-		  Branch {
-		    ZOrder		    15
-		    Points		    [0, -65]
-		    DstBlock		    "Efficiency P pos"
-		    DstPort		    1
-		  }
-		}
-	      }
-	    }
-	    Block {
-	      BlockType		      SubSystem
-	      Name		      "Doc Rear axle"
-	      SID		      "8926"
-	      Ports		      []
-	      Position		      [1200, 497, 1247, 556]
-	      ZOrder		      -7
-	      BackgroundColor	      "lightBlue"
-	      LibraryVersion	      "1.225"
-	      OpenFcn		      "open('Documents\\RearAxle.pdf')"
-	      RequestExecContextInheritance off
-	      Object {
-		$PropName		"MaskObject"
-		$ObjectID		34
-		$ClassName		"Simulink.Mask"
-		Display			"fprintf('DOC')"
-	      }
-	      System {
-		Name			"Doc Rear axle"
-		Location		[16, 52, 1372, 1280]
-		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
-		ModelBrowserVisibility	off
-		ModelBrowserWidth	200
-		ScreenColor		"white"
-		PaperOrientation	"landscape"
-		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
-		TiledPageScale		1
-		ShowPageBoundaries	off
-		ZoomFactor		"100"
-	      }
-	    }
-	    Block {
-	      BlockType		      SubSystem
-	      Name		      "Electrical machine"
-	      SID		      "8927"
-	      Ports		      [1, 1]
-	      Position		      [230, 18, 525, 182]
-	      ZOrder		      -8
-	      BackgroundColor	      "yellow"
-	      RequestExecContextInheritance off
-	      Port {
-		PortNumber		1
-		Name			"OB_EM"
-	      }
-	      System {
-		Name			"Electrical machine"
-		Location		[676, 0, 1373, 735]
-		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
-		ModelBrowserVisibility	off
-		ModelBrowserWidth	200
-		ScreenColor		"white"
-		PaperOrientation	"landscape"
-		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
-		TiledPageScale		1
-		ShowPageBoundaries	off
-		ZoomFactor		"80"
-		Block {
-		  BlockType		  Inport
-		  Name			  "Input_Bus_Electrical_Machine"
-		  SID			  "8928"
-		  Position		  [40, 588, 70, 602]
-		  ZOrder		  18
-		  IconDisplay		  "Port number"
-		  Port {
-		    PortNumber		    1
-		    Name		    "IB_EM"
-		    PropagatedSignals	    "IB_EM"
-		  }
-		}
-		Block {
-		  BlockType		  BusCreator
-		  Name			  "Bus\nCreator"
-		  SID			  "8929"
-		  Ports			  [4, 1]
-		  Position		  [800, 505, 810, 680]
-		  ZOrder		  8
-		  ShowName		  off
-		  Inputs		  "4"
-		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
-		  Port {
-		    PortNumber		    1
-		    Name		    "OB_EM"
-		  }
-		}
-		Block {
-		  BlockType		  BusCreator
-		  Name			  "Bus\nCreator1"
-		  SID			  "8930"
-		  Ports			  [2, 1]
-		  Position		  [210, 297, 215, 428]
-		  ZOrder		  22
-		  ShowName		  off
-		  Inputs		  "2"
-		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
-		  Port {
-		    PortNumber		    1
-		    Name		    "IB_ER"
-		  }
-		}
-		Block {
-		  BlockType		  BusCreator
-		  Name			  "Bus\nCreator2"
-		  SID			  "8931"
-		  Ports			  [3, 1]
-		  Position		  [305, 76, 310, 204]
-		  ZOrder		  27
-		  ShowName		  off
-		  Inputs		  "3"
-		  DisplayOption		  "bar"
-		  InheritFromInputs	  on
-		  Port {
-		    PortNumber		    1
-		    Name		    "IB_PE"
-		  }
-		}
-		Block {
-		  BlockType		  BusSelector
-		  Name			  "Bus\nSelector"
-		  SID			  "8932"
-		  Ports			  [1, 3]
-		  Position		  [150, 508, 155, 682]
-		  ZOrder		  17
-		  ShowName		  off
-		  OutputSignals		  "CMD_RA_TQ_SP,RA_N_EM,SYSE_VOLTAGE_HV"
-		  OutputAsBus		  off
-		  Port {
-		    PortNumber		    1
-		    Name		    "<CMD_RA_TQ_SP>"
-		  }
-		  Port {
-		    PortNumber		    2
-		    Name		    "<RA_N_EM>"
-		  }
-		  Port {
-		    PortNumber		    3
-		    Name		    "<SYSE_VOLTAGE_HV>"
-		  }
-		}
-		Block {
-		  BlockType		  BusSelector
-		  Name			  "Bus\nSelector1"
-		  SID			  "8933"
-		  Ports			  [1, 3]
-		  Position		  [685, 300, 690, 430]
-		  ZOrder		  25
-		  ShowName		  off
-		  OutputSignals		  "RA_TQ_ME,RA_TQ_MIN_ME,RA_TQ_MAX_ME"
-		  OutputAsBus		  off
-		  Port {
-		    PortNumber		    1
-		    Name		    "<RA_TQ_ME>"
-		  }
-		  Port {
-		    PortNumber		    2
-		    Name		    "<RA_TQ_MIN_ME>"
-		  }
-		  Port {
-		    PortNumber		    3
-		    Name		    "<RA_TQ_MAX_ME>"
-		  }
-		}
-		Block {
-		  BlockType		  SubSystem
-		  Name			  "Engine representation"
-		  SID			  "8934"
-		  Ports			  [1, 1]
-		  Position		  [285, 302, 640, 428]
-		  ZOrder		  -5
-		  BackgroundColor	  "green"
-		  RequestExecContextInheritance	off
-		  Port {
-		    PortNumber		    1
-		    Name		    "IB_ER"
-		  }
-		  System {
-		    Name		    "Engine representation"
-		    Location		    [-8, -8, 1374, 736]
-		    Open		    off
-		    PortBlocksUseCompactNotation off
-		    SetExecutionDomain	    off
-		    ExecutionDomainType	    "Deduce"
-		    ModelBrowserVisibility  off
-		    ModelBrowserWidth	    200
-		    ScreenColor		    "white"
-		    PaperOrientation	    "landscape"
-		    PaperPositionMode	    "auto"
-		    PaperType		    "A4"
-		    PaperUnits		    "centimeters"
-		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
-		    TiledPageScale	    1
-		    ShowPageBoundaries	    off
-		    ZoomFactor		    "100"
-		    Block {
-		    BlockType		    Inport
-		    Name		    "Input_Bus_Engine_Representation"
-		    SID			    "8935"
-		    Position		    [130, 408, 160, 422]
-		    ZOrder		    4
-		    IconDisplay		    "Port number"
-		    Port {
-		    PortNumber		    1
-		    Name		    "IB_ER"
-		    PropagatedSignals	    "IB_ER"
-		    }
-		    }
-		    Block {
-		    BlockType		    BusCreator
-		    Name		    "Bus\nCreator"
-		    SID			    "8936"
-		    Ports		    [3, 1]
-		    Position		    [780, 381, 785, 459]
-		    ZOrder		    10
-		    ShowName		    off
-		    Inputs		    "3"
-		    DisplayOption	    "bar"
-		    InheritFromInputs	    on
-		    Port {
-		    PortNumber		    1
-		    Name		    "IB_ER"
-		    }
-		    }
-		    Block {
-		    BlockType		    BusSelector
-		    Name		    "Bus\nSelector"
-		    SID			    "8937"
-		    Ports		    [1, 2]
-		    Position		    [275, 383, 280, 447]
-		    ZOrder		    5
-		    ShowName		    off
-		    OutputSignals	    "CMD_RA_TQ_SP,RA_N_EM"
-		    OutputAsBus		    off
-		    Port {
-		    PortNumber		    1
-		    Name		    "<CMD_RA_TQ_SP>"
-		    }
-		    Port {
-		    PortNumber		    2
-		    Name		    "<RA_N_EM>"
-		    }
-		    }
-		    Block {
-		    BlockType		    DiscreteTransferFcn
-		    Name		    "Discrete\nTransfer Fcn3"
-		    SID			    "8938"
-		    Ports		    [1, 1]
-		    Position		    [415, 101, 835, 199]
-		    ZOrder		    3
-		    InputPortMap	    "u0"
-		    Numerator		    "[(hev_dt/(2*(ra_electrical_machine_tau)+hev_dt)) (hev_dt/(2*(ra_electrical_machine_tau)+hev_dt))]"
-		    Denominator		    "[1 ((hev_dt-2*(ra_electrical_machine_tau)))/(2*(ra_electrical_machine_tau)+hev_dt)]"
-		    SampleTime		    "hev_dt"
-		    }
-		    Block {
-		    BlockType		    From
-		    Name		    "From"
-		    SID			    "8939"
-		    Position		    [30, 138, 155, 162]
-		    ZOrder		    8
-		    GotoTag		    "CMD_RA_TQ_SP"
-		    }
-		    Block {
-		    BlockType		    From
-		    Name		    "From1"
-		    SID			    "8940"
-		    Position		    [50, 63, 140, 87]
-		    ZOrder		    9
-		    GotoTag		    "RA_N_EM"
-		    }
-		    Block {
-		    BlockType		    From
-		    Name		    "From2"
-		    SID			    "8941"
-		    Position		    [585, 386, 675, 404]
-		    ZOrder		    15
-		    GotoTag		    "RA_TQ_ME"
-		    Port {
-		    PortNumber		    1
-		    Name		    "RA_TQ_ME"
-		    }
-		    }
-		    Block {
-		    BlockType		    From
-		    Name		    "From3"
-		    SID			    "8942"
-		    Position		    [585, 411, 685, 429]
-		    ZOrder		    16
-		    GotoTag		    "RA_TQ_MIN_ME"
-		    Port {
-		    PortNumber		    1
-		    Name		    "RA_TQ_MIN_ME"
-		    }
-		    }
-		    Block {
-		    BlockType		    From
-		    Name		    "From4"
-		    SID			    "8943"
-		    Position		    [580, 436, 690, 454]
-		    ZOrder		    17
-		    GotoTag		    "RA_TQ_MAX_ME"
-		    Port {
-		    PortNumber		    1
-		    Name		    "RA_TQ_MAX_ME"
-		    }
-		    }
-		    Block {
-		    BlockType		    Goto
-		    Name		    "Goto"
-		    SID			    "8944"
-		    Position		    [390, 387, 495, 413]
-		    ZOrder		    6
-		    GotoTag		    "CMD_RA_TQ_SP"
-		    }
-		    Block {
-		    BlockType		    Goto
-		    Name		    "Goto1"
-		    SID			    "8945"
-		    Position		    [390, 417, 495, 443]
-		    ZOrder		    7
-		    GotoTag		    "RA_N_EM"
-		    }
-		    Block {
-		    BlockType		    Goto
-		    Name		    "Goto2"
-		    SID			    "8946"
-		    Position		    [875, 137, 980, 163]
-		    ZOrder		    12
-		    GotoTag		    "RA_TQ_ME"
-		    }
-		    Block {
-		    BlockType		    Goto
-		    Name		    "Goto3"
-		    SID			    "8947"
-		    Position		    [665, 62, 770, 88]
-		    ZOrder		    13
-		    GotoTag		    "RA_TQ_MAX_ME"
-		    }
-		    Block {
-		    BlockType		    Goto
-		    Name		    "Goto4"
-		    SID			    "8948"
-		    Position		    [680, 237, 785, 263]
-		    ZOrder		    14
-		    GotoTag		    "RA_TQ_MIN_ME"
-		    }
-		    Block {
-		    BlockType		    Lookup
-		    Name		    "Maximum torque"
-		    SID			    "8949"
-		    Position		    [190, 43, 255, 107]
-		    ZOrder		    -4
-		    InputValues		    "ra_electrical_machine_speed"
-		    Table		    "ra_em_max_tq"
-		    LookUpMeth		    "Interpolation-Use End Values"
-		    SaturateOnIntegerOverflow off
-		    SampleTime		    "hev_dt"
-		    }
-		    Block {
-		    BlockType		    Lookup
-		    Name		    "Minimum torque"
-		    SID			    "8950"
-		    Position		    [190, 218, 255, 282]
-		    ZOrder		    -5
-		    InputValues		    "ra_electrical_machine_speed"
-		    Table		    "ra_em_min_tq"
-		    LookUpMeth		    "Interpolation-Use End Values"
-		    SaturateOnIntegerOverflow off
-		    SampleTime		    "hev_dt"
-		    }
-		    Block {
-		    BlockType		    Reference
-		    Name		    "Saturation\nDynamic"
-		    SID			    "8951"
-		    Ports		    [3, 1]
-		    Position		    [295, 130, 375, 170]
-		    ZOrder		    -6
-		    LibraryVersion	    "1.444"
-		    SourceBlock		    "simulink/Discontinuities/Saturation\nDynamic"
-		    SourceType		    "Saturation Dynamic"
-		    SourceProductName	    "Simulink"
-		    SourceProductBaseCode   "SL"
-		    ContentPreviewEnabled   off
-		    OutMin		    "[]"
-		    OutMax		    "[]"
-		    OutDataTypeStr	    "Inherit: Same as second input"
-		    OutputDataTypeScalingMode "Same as second input"
-		    OutDataType		    "fixdt(1, 16)"
-		    OutScaling		    "2^-10"
-		    LockScale		    off
-		    RndMeth		    "Floor"
-		    DoSatur		    off
-		    }
-		    Block {
-		    BlockType		    Outport
-		    Name		    "Output_Bus_Engine_Representation"
-		    SID			    "8952"
-		    Position		    [860, 413, 890, 427]
-		    ZOrder		    11
-		    IconDisplay		    "Port number"
-		    }
-		    Line {
-		    ZOrder		    1
-		    SrcBlock		    "From1"
-		    SrcPort		    1
-		    Points		    [25, 0]
-		    Branch {
-		    ZOrder		    2
-		    DstBlock		    "Maximum torque"
-		    DstPort		    1
-		    }
-		    Branch {
-		    ZOrder		    3
-		    Points		    [0, 175]
-		    DstBlock		    "Minimum torque"
-		    DstPort		    1
-		    }
-		    }
-		    Line {
-		    ZOrder		    4
-		    SrcBlock		    "Maximum torque"
-		    SrcPort		    1
-		    Points		    [15, 0]
-		    Branch {
-		    ZOrder		    5
-		    DstBlock		    "Goto3"
-		    DstPort		    1
-		    }
-		    Branch {
-		    ZOrder		    6
-		    Points		    [0, 60]
-		    DstBlock		    "Saturation\nDynamic"
-		    DstPort		    1
-		    }
-		    }
-		    Line {
-		    ZOrder		    7
-		    SrcBlock		    "Minimum torque"
-		    SrcPort		    1
-		    Points		    [15, 0]
-		    Branch {
-		    ZOrder		    8
-		    DstBlock		    "Goto4"
-		    DstPort		    1
-		    }
-		    Branch {
-		    ZOrder		    9
-		    Points		    [0, -85]
-		    DstBlock		    "Saturation\nDynamic"
-		    DstPort		    3
-		    }
-		    }
-		    Line {
-		    ZOrder		    10
-		    SrcBlock		    "Saturation\nDynamic"
-		    SrcPort		    1
-		    DstBlock		    "Discrete\nTransfer Fcn3"
-		    DstPort		    1
-		    }
-		    Line {
-		    ZOrder		    11
-		    SrcBlock		    "From"
-		    SrcPort		    1
-		    DstBlock		    "Saturation\nDynamic"
-		    DstPort		    2
-		    }
-		    Line {
-		    ZOrder		    12
-		    SrcBlock		    "Discrete\nTransfer Fcn3"
-		    SrcPort		    1
-		    DstBlock		    "Goto2"
-		    DstPort		    1
-		    }
-		    Line {
-		    Name		    "IB_ER"
-		    ZOrder		    13
-		    Labels		    [1, 0]
-		    SrcBlock		    "Input_Bus_Engine_Representation"
-		    SrcPort		    1
-		    DstBlock		    "Bus\nSelector"
-		    DstPort		    1
-		    }
-		    Line {
-		    Name		    "<CMD_RA_TQ_SP>"
-		    ZOrder		    14
-		    Labels		    [0, 0]
-		    SrcBlock		    "Bus\nSelector"
-		    SrcPort		    1
-		    DstBlock		    "Goto"
-		    DstPort		    1
-		    }
-		    Line {
-		    Name		    "<RA_N_EM>"
-		    ZOrder		    15
-		    Labels		    [0, 0]
-		    SrcBlock		    "Bus\nSelector"
-		    SrcPort		    2
-		    DstBlock		    "Goto1"
-		    DstPort		    1
-		    }
-		    Line {
-		    Name		    "IB_ER"
-		    ZOrder		    16
-		    Labels		    [1, 0]
-		    SrcBlock		    "Bus\nCreator"
-		    SrcPort		    1
-		    DstBlock		    "Output_Bus_Engine_Representation"
-		    DstPort		    1
-		    }
-		    Line {
-		    Name		    "RA_TQ_ME"
-		    ZOrder		    17
-		    Labels		    [1, 1]
-		    SrcBlock		    "From2"
-		    SrcPort		    1
-		    DstBlock		    "Bus\nCreator"
-		    DstPort		    1
-		    }
-		    Line {
-		    Name		    "RA_TQ_MIN_ME"
-		    ZOrder		    18
-		    Labels		    [1, 1]
-		    SrcBlock		    "From3"
-		    SrcPort		    1
-		    DstBlock		    "Bus\nCreator"
-		    DstPort		    2
-		    }
-		    Line {
-		    Name		    "RA_TQ_MAX_ME"
-		    ZOrder		    19
-		    Labels		    [1, 1]
-		    SrcBlock		    "From4"
-		    SrcPort		    1
-		    DstBlock		    "Bus\nCreator"
-		    DstPort		    3
-		    }
-		  }
-		}
-		Block {
-		  BlockType		  From
-		  Name			  "From"
-		  SID			  "8953"
-		  Position		  [530, 598, 625, 632]
-		  ZOrder		  9
-		  GotoTag		  "RA_TQ_MIN_ME"
-		  Port {
-		    PortNumber		    1
-		    Name		    "RA_TQ_MIN_ME"
-		  }
-		}
-		Block {
-		  BlockType		  From
-		  Name			  "From1"
-		  SID			  "8954"
-		  Position		  [530, 646, 645, 674]
-		  ZOrder		  10
-		  GotoTag		  "RA_TQ_MAX_ME"
-		  Port {
-		    PortNumber		    1
-		    Name		    "RA_TQ_MAX_ME"
-		  }
-		}
-		Block {
-		  BlockType		  From
-		  Name			  "From2"
-		  SID			  "8955"
-		  Position		  [530, 556, 625, 584]
-		  ZOrder		  13
-		  GotoTag		  "RA_TQ_ME"
-		  Port {
-		    PortNumber		    1
-		    Name		    "RA_TQ_ME"
-		  }
-		}
-		Block {
-		  BlockType		  From
-		  Name			  "From3"
-		  SID			  "8956"
-		  Position		  [530, 513, 640, 537]
-		  ZOrder		  15
-		  GotoTag		  "RA_EM_CURRENT"
-		  Port {
-		    PortNumber		    1
-		    Name		    "RA_EM_CURRENT"
-		  }
-		}
-		Block {
-		  BlockType		  From
-		  Name			  "From4"
-		  SID			  "8957"
-		  Position		  [40, 315, 155, 345]
-		  ZOrder		  23
-		  GotoTag		  "CMD_RA_TQ_SP"
-		}
-		Block {
-		  BlockType		  From
-		  Name			  "From5"
-		  SID			  "8958"
-		  Position		  [40, 383, 155, 407]
-		  ZOrder		  24
-		  GotoTag		  "RA_N_EM"
-		}
-		Block {
-		  BlockType		  From
-		  Name			  "From6"
-		  SID			  "8959"
-		  Position		  [115, 88, 210, 112]
-		  ZOrder		  29
-		  GotoTag		  "RA_TQ_ME"
-		}
-		Block {
-		  BlockType		  From
-		  Name			  "From7"
-		  SID			  "8960"
-		  Position		  [115, 128, 210, 152]
-		  ZOrder		  30
-		  GotoTag		  "RA_N_EM"
-		}
-		Block {
-		  BlockType		  From
-		  Name			  "From8"
-		  SID			  "8961"
-		  Position		  [115, 166, 230, 194]
-		  ZOrder		  31
-		  GotoTag		  "SYSE_VOLTAGE_HV"
-		}
-		Block {
-		  BlockType		  Goto
-		  Name			  "Goto"
-		  SID			  "8962"
-		  Position		  [790, 352, 910, 378]
-		  ZOrder		  2
-		  GotoTag		  "RA_TQ_MIN_ME"
-		}
-		Block {
-		  BlockType		  Goto
-		  Name			  "Goto1"
-		  SID			  "8963"
-		  Position		  [790, 397, 910, 423]
-		  ZOrder		  7
-		  GotoTag		  "RA_TQ_MAX_ME"
-		}
-		Block {
-		  BlockType		  Goto
-		  Name			  "Goto3"
-		  SID			  "8964"
-		  Position		  [770, 127, 890, 153]
-		  ZOrder		  12
-		  GotoTag		  "RA_EM_CURRENT"
-		}
-		Block {
-		  BlockType		  Goto
-		  Name			  "Goto4"
-		  SID			  "8965"
-		  Position		  [280, 642, 400, 668]
-		  ZOrder		  19
-		  GotoTag		  "SYSE_VOLTAGE_HV"
-		}
-		Block {
-		  BlockType		  Goto
-		  Name			  "Goto5"
-		  SID			  "8966"
-		  Position		  [280, 582, 400, 608]
-		  ZOrder		  20
-		  GotoTag		  "RA_N_EM"
-		}
-		Block {
-		  BlockType		  Goto
-		  Name			  "Goto6"
-		  SID			  "8967"
-		  Position		  [285, 522, 405, 548]
-		  ZOrder		  21
-		  GotoTag		  "CMD_RA_TQ_SP"
-		}
-		Block {
-		  BlockType		  Goto
-		  Name			  "Goto7"
-		  SID			  "8968"
-		  Position		  [790, 307, 910, 333]
-		  ZOrder		  26
-		  GotoTag		  "RA_TQ_ME"
-		}
-		Block {
-		  BlockType		  SubSystem
-		  Name			  "Power efficiency"
-		  SID			  "8969"
-		  Ports			  [1, 1]
-		  Position		  [375, 82, 640, 198]
-		  ZOrder		  -6
-		  BackgroundColor	  "yellow"
-		  RequestExecContextInheritance	off
-		  Port {
-		    PortNumber		    1
-		    Name		    "RA_EM_CURRENT"
-		  }
-		  System {
-		    Name		    "Power efficiency"
-		    Location		    [-8, -8, 1374, 736]
-		    Open		    off
-		    PortBlocksUseCompactNotation off
-		    SetExecutionDomain	    off
-		    ExecutionDomainType	    "Deduce"
-		    ModelBrowserVisibility  off
-		    ModelBrowserWidth	    200
-		    ScreenColor		    "white"
-		    PaperOrientation	    "landscape"
-		    PaperPositionMode	    "auto"
-		    PaperType		    "A4"
-		    PaperUnits		    "centimeters"
-		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
-		    TiledPageScale	    1
-		    ShowPageBoundaries	    off
-		    ZoomFactor		    "100"
-		    Block {
-		    BlockType		    Inport
-		    Name		    "Input_Bus_Power_Efficiency"
-		    SID			    "8970"
-		    Position		    [110, 408, 140, 422]
-		    ZOrder		    5
-		    IconDisplay		    "Port number"
-		    Port {
-		    PortNumber		    1
-		    Name		    "IB_PE"
-		    PropagatedSignals	    "IB_PE"
-		    }
-		    }
-		    Block {
-		    BlockType		    BusSelector
-		    Name		    "Bus\nSelector"
-		    SID			    "8971"
-		    Ports		    [1, 3]
-		    Position		    [225, 363, 230, 467]
-		    ZOrder		    7
-		    ShowName		    off
-		    OutputSignals	    "RA_TQ_ME,RA_N_EM,SYSE_VOLTAGE_HV"
-		    OutputAsBus		    off
-		    Port {
-		    PortNumber		    1
-		    Name		    "<RA_TQ_ME>"
-		    }
-		    Port {
-		    PortNumber		    2
-		    Name		    "<RA_N_EM>"
-		    }
-		    Port {
-		    PortNumber		    3
-		    Name		    "<SYSE_VOLTAGE_HV>"
-		    }
-		    }
-		    Block {
-		    BlockType		    Product
-		    Name		    "Divide"
-		    SID			    "8972"
-		    Ports		    [2, 1]
-		    Position		    [595, 17, 625, 48]
-		    ZOrder		    -3
-		    Inputs		    "/*"
-		    InputSameDT		    off
-		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
-		    RndMeth		    "Floor"
-		    SaturateOnIntegerOverflow off
-		    SampleTime		    "hev_dt"
-		    }
-		    Block {
-		    BlockType		    Product
-		    Name		    "Divide1"
-		    SID			    "8973"
-		    Ports		    [2, 1]
-		    Position		    [450, 257, 480, 288]
-		    ZOrder		    3
-		    Inputs		    "*/"
-		    InputSameDT		    off
-		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
-		    RndMeth		    "Floor"
-		    SaturateOnIntegerOverflow off
-		    SampleTime		    "hev_dt"
-		    }
-		    Block {
-		    BlockType		    Lookup_n-D
-		    Name		    "Efficiency (%)"
-		    SID			    "8974"
-		    Ports		    [2, 1]
-		    Position		    [225, 43, 290, 107]
-		    ZOrder		    -4
-		    BreakpointsForDimension1 "ra_electrical_machine_torque"
-		    BreakpointsForDimension2 "ra_electrical_machine_speed"
-		    Table		    "ra_electrical_machine_efficiency"
-		    SampleTime		    "hev_dt"
-		    RndMeth		    "Simplest"
-		    }
-		    Block {
-		    BlockType		    Gain
-		    Name		    "Efficiency conversion"
-		    SID			    "8975"
-		    Position		    [335, 59, 385, 91]
-		    ZOrder		    -5
-		    Gain		    "1/100"
-		    ParamDataTypeStr	    "Inherit: Inherit via internal rule"
-		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
-		    SaturateOnIntegerOverflow off
-		    SampleTime		    "hev_dt"
-		    }
-		    Block {
-		    BlockType		    From
-		    Name		    "From"
-		    SID			    "8976"
-		    Position		    [25, 46, 120, 74]
-		    ZOrder		    26
-		    GotoTag		    "RA_TQ_ME"
-		    }
-		    Block {
-		    BlockType		    From
-		    Name		    "From1"
-		    SID			    "8977"
-		    Position		    [25, 141, 120, 169]
-		    ZOrder		    27
-		    GotoTag		    "RA_N_ME"
-		    }
-		    Block {
-		    BlockType		    From
-		    Name		    "From2"
-		    SID			    "8978"
-		    Position		    [80, 266, 200, 294]
-		    ZOrder		    28
-		    GotoTag		    "SYSE_VOLTAGE_HV"
-		    }
-		    Block {
-		    BlockType		    Goto
-		    Name		    "Goto"
-		    SID			    "8979"
-		    Position		    [345, 367, 465, 393]
-		    ZOrder		    8
-		    GotoTag		    "RA_TQ_ME"
-		    }
-		    Block {
-		    BlockType		    Goto
-		    Name		    "Goto1"
-		    SID			    "8980"
-		    Position		    [345, 402, 465, 428]
-		    ZOrder		    24
-		    GotoTag		    "RA_N_ME"
-		    }
-		    Block {
-		    BlockType		    Goto
-		    Name		    "Goto2"
-		    SID			    "8981"
-		    Position		    [345, 437, 465, 463]
-		    ZOrder		    25
-		    GotoTag		    "SYSE_VOLTAGE_HV"
-		    }
-		    Block {
-		    BlockType		    Product
-		    Name		    "Product"
-		    SID			    "8982"
-		    Ports		    [2, 1]
-		    Position		    [450, 66, 480, 99]
-		    ZOrder		    -6
-		    InputSameDT		    off
-		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
-		    SaturateOnIntegerOverflow off
-		    SampleTime		    "hev_dt"
-		    }
-		    Block {
-		    BlockType		    Product
-		    Name		    "Product1"
-		    SID			    "8983"
-		    Ports		    [2, 1]
-		    Position		    [595, 116, 625, 149]
-		    ZOrder		    -7
-		    InputSameDT		    off
-		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
-		    SaturateOnIntegerOverflow off
-		    SampleTime		    "hev_dt"
-		    }
-		    Block {
-		    BlockType		    Switch
-		    Name		    "Switch"
-		    SID			    "8984"
-		    Position		    [715, 65, 765, 105]
-		    ZOrder		    -8
-		    InputSameDT		    off
-		    SaturateOnIntegerOverflow off
-		    SampleTime		    "hev_dt"
-		    Port {
-		    PortNumber		    1
-		    Name		    "W"
-		    }
-		    }
-		    Block {
-		    BlockType		    Gain
-		    Name		    "tr/min -> rad/s"
-		    SID			    "8985"
-		    Position		    [335, 140, 365, 170]
-		    ZOrder		    -9
-		    Gain		    "2*pi/60"
-		    ParamDataTypeStr	    "Inherit: Inherit via internal rule"
-		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
-		    SaturateOnIntegerOverflow off
-		    SampleTime		    "hev_dt"
-		    }
-		    Block {
-		    BlockType		    Outport
-		    Name		    "RA_EM_CURRENT"
-		    SID			    "8986"
-		    Position		    [620, 268, 650, 282]
-		    ZOrder		    2
-		    IconDisplay		    "Port number"
-		    }
-		    Line {
-		    ZOrder		    1
-		    SrcBlock		    "Efficiency (%)"
-		    SrcPort		    1
-		    DstBlock		    "Efficiency conversion"
-		    DstPort		    1
-		    }
-		    Line {
-		    ZOrder		    2
-		    SrcBlock		    "Product"
-		    SrcPort		    1
-		    Points		    [90, 0]
-		    Branch {
-		    ZOrder		    3
-		    DstBlock		    "Switch"
-		    DstPort		    2
-		    }
-		    Branch {
-		    ZOrder		    4
-		    Points		    [0, 40]
-		    DstBlock		    "Product1"
-		    DstPort		    1
-		    }
-		    Branch {
-		    ZOrder		    5
-		    Points		    [0, -45]
-		    DstBlock		    "Divide"
-		    DstPort		    2
-		    }
-		    }
-		    Line {
-		    ZOrder		    6
-		    SrcBlock		    "Divide"
-		    SrcPort		    1
-		    Points		    [35, 0; 0, 35]
-		    DstBlock		    "Switch"
-		    DstPort		    1
-		    }
-		    Line {
-		    ZOrder		    7
-		    SrcBlock		    "Product1"
-		    SrcPort		    1
-		    Points		    [35, 0; 0, -35]
-		    DstBlock		    "Switch"
-		    DstPort		    3
-		    }
-		    Line {
-		    ZOrder		    8
-		    SrcBlock		    "Efficiency conversion"
-		    SrcPort		    1
-		    Points		    [20, 0]
-		    Branch {
-		    ZOrder		    9
-		    Points		    [0, 65]
-		    DstBlock		    "Product1"
-		    DstPort		    2
-		    }
-		    Branch {
-		    ZOrder		    10
-		    Points		    [0, -50]
-		    DstBlock		    "Divide"
-		    DstPort		    1
-		    }
-		    }
-		    Line {
-		    ZOrder		    11
-		    SrcBlock		    "tr/min -> rad/s"
-		    SrcPort		    1
-		    Points		    [65, 0]
-		    DstBlock		    "Product"
-		    DstPort		    2
-		    }
-		    Line {
-		    Name		    "W"
-		    ZOrder		    12
-		    Labels		    [0, 0]
-		    SrcBlock		    "Switch"
-		    SrcPort		    1
-		    Points		    [18, 0; 0, 120; -359, 0; 0, 60]
-		    DstBlock		    "Divide1"
-		    DstPort		    1
-		    }
-		    Line {
-		    ZOrder		    13
-		    SrcBlock		    "From"
-		    SrcPort		    1
-		    Points		    [50, 0]
-		    Branch {
-		    ZOrder		    14
-		    Points		    [0, -27; 248, 0; 0, 42]
-		    DstBlock		    "Product"
-		    DstPort		    1
-		    }
-		    Branch {
-		    ZOrder		    15
-		    DstBlock		    "Efficiency (%)"
-		    DstPort		    1
-		    }
-		    }
-		    Line {
-		    ZOrder		    16
-		    SrcBlock		    "From1"
-		    SrcPort		    1
-		    Points		    [16, 0]
-		    Branch {
-		    ZOrder		    17
-		    Points		    [0, -65]
-		    DstBlock		    "Efficiency (%)"
-		    DstPort		    2
-		    }
-		    Branch {
-		    ZOrder		    18
-		    DstBlock		    "tr/min -> rad/s"
-		    DstPort		    1
-		    }
-		    }
-		    Line {
-		    ZOrder		    19
-		    SrcBlock		    "Divide1"
-		    SrcPort		    1
-		    DstBlock		    "RA_EM_CURRENT"
-		    DstPort		    1
-		    }
-		    Line {
-		    ZOrder		    20
-		    SrcBlock		    "From2"
-		    SrcPort		    1
-		    DstBlock		    "Divide1"
-		    DstPort		    2
-		    }
-		    Line {
-		    Name		    "IB_PE"
-		    ZOrder		    21
-		    Labels		    [1, 0]
-		    SrcBlock		    "Input_Bus_Power_Efficiency"
-		    SrcPort		    1
-		    DstBlock		    "Bus\nSelector"
-		    DstPort		    1
-		    }
-		    Line {
-		    Name		    "<RA_TQ_ME>"
-		    ZOrder		    22
-		    Labels		    [0, 0]
-		    SrcBlock		    "Bus\nSelector"
-		    SrcPort		    1
-		    DstBlock		    "Goto"
-		    DstPort		    1
-		    }
-		    Line {
-		    Name		    "<RA_N_EM>"
-		    ZOrder		    23
-		    Labels		    [0, 0]
-		    SrcBlock		    "Bus\nSelector"
-		    SrcPort		    2
-		    DstBlock		    "Goto1"
-		    DstPort		    1
-		    }
-		    Line {
-		    Name		    "<SYSE_VOLTAGE_HV>"
-		    ZOrder		    24
-		    Labels		    [0, 0]
-		    SrcBlock		    "Bus\nSelector"
-		    SrcPort		    3
-		    DstBlock		    "Goto2"
-		    DstPort		    1
-		    }
-		    Annotation {
-		    SID			    "8987"
-		    Position		    [780, 174, 782, 188]
-		    InternalMargins	    [0, 0, 0, 0]
-		    ZOrder		    -1
-		    }
-		  }
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "Output_Bus_Electrical_Machine"
-		  SID			  "8988"
-		  Position		  [910, 588, 940, 602]
-		  ZOrder		  16
-		  IconDisplay		  "Port number"
-		}
-		Line {
-		  Name			  "RA_EM_CURRENT"
-		  ZOrder		  1
-		  Labels		  [1, 1]
-		  SrcBlock		  "Power efficiency"
-		  SrcPort		  1
-		  DstBlock		  "Goto3"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "RA_TQ_MIN_ME"
-		  ZOrder		  2
-		  Labels		  [1, 1]
-		  SrcBlock		  "From"
-		  SrcPort		  1
-		  DstBlock		  "Bus\nCreator"
-		  DstPort		  3
-		}
-		Line {
-		  Name			  "RA_TQ_MAX_ME"
-		  ZOrder		  3
-		  Labels		  [1, 1]
-		  SrcBlock		  "From1"
-		  SrcPort		  1
-		  DstBlock		  "Bus\nCreator"
-		  DstPort		  4
-		}
-		Line {
-		  Name			  "RA_TQ_ME"
-		  ZOrder		  4
-		  Labels		  [1, 1]
-		  SrcBlock		  "From2"
-		  SrcPort		  1
-		  DstBlock		  "Bus\nCreator"
-		  DstPort		  2
-		}
-		Line {
-		  Name			  "RA_EM_CURRENT"
-		  ZOrder		  5
-		  Labels		  [1, 1]
-		  SrcBlock		  "From3"
-		  SrcPort		  1
-		  DstBlock		  "Bus\nCreator"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "OB_EM"
-		  ZOrder		  6
-		  Labels		  [1, 0]
-		  SrcBlock		  "Bus\nCreator"
-		  SrcPort		  1
-		  DstBlock		  "Output_Bus_Electrical_Machine"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "IB_EM"
-		  ZOrder		  7
-		  Labels		  [1, 0]
-		  SrcBlock		  "Input_Bus_Electrical_Machine"
-		  SrcPort		  1
-		  DstBlock		  "Bus\nSelector"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "<SYSE_VOLTAGE_HV>"
-		  ZOrder		  8
-		  Labels		  [0, 0]
-		  SrcBlock		  "Bus\nSelector"
-		  SrcPort		  3
-		  DstBlock		  "Goto4"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "<RA_N_EM>"
-		  ZOrder		  9
-		  Labels		  [0, 0]
-		  SrcBlock		  "Bus\nSelector"
-		  SrcPort		  2
-		  DstBlock		  "Goto5"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "<CMD_RA_TQ_SP>"
-		  ZOrder		  10
-		  Labels		  [0, 0]
-		  SrcBlock		  "Bus\nSelector"
-		  SrcPort		  1
-		  DstBlock		  "Goto6"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  11
-		  SrcBlock		  "From4"
-		  SrcPort		  1
-		  DstBlock		  "Bus\nCreator1"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  12
-		  SrcBlock		  "From5"
-		  SrcPort		  1
-		  DstBlock		  "Bus\nCreator1"
-		  DstPort		  2
-		}
-		Line {
-		  Name			  "IB_ER"
-		  ZOrder		  13
-		  Labels		  [1, 1]
-		  SrcBlock		  "Bus\nCreator1"
-		  SrcPort		  1
-		  DstBlock		  "Engine representation"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "IB_ER"
-		  ZOrder		  14
-		  Labels		  [1, 1]
-		  SrcBlock		  "Engine representation"
-		  SrcPort		  1
-		  DstBlock		  "Bus\nSelector1"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "<RA_TQ_MIN_ME>"
-		  ZOrder		  15
-		  Labels		  [0, 0]
-		  SrcBlock		  "Bus\nSelector1"
-		  SrcPort		  2
-		  DstBlock		  "Goto"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "<RA_TQ_MAX_ME>"
-		  ZOrder		  16
-		  Labels		  [0, 0]
-		  SrcBlock		  "Bus\nSelector1"
-		  SrcPort		  3
-		  DstBlock		  "Goto1"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "<RA_TQ_ME>"
-		  ZOrder		  17
-		  Labels		  [0, 0]
-		  SrcBlock		  "Bus\nSelector1"
-		  SrcPort		  1
-		  DstBlock		  "Goto7"
-		  DstPort		  1
-		}
-		Line {
-		  Name			  "IB_PE"
-		  ZOrder		  18
-		  Labels		  [1, 0]
-		  SrcBlock		  "Bus\nCreator2"
-		  SrcPort		  1
-		  DstBlock		  "Power efficiency"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  19
-		  SrcBlock		  "From6"
-		  SrcPort		  1
-		  DstBlock		  "Bus\nCreator2"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  20
-		  SrcBlock		  "From7"
-		  SrcPort		  1
-		  DstBlock		  "Bus\nCreator2"
-		  DstPort		  2
-		}
-		Line {
-		  ZOrder		  21
-		  SrcBlock		  "From8"
-		  SrcPort		  1
-		  DstBlock		  "Bus\nCreator2"
-		  DstPort		  3
-		}
-		Annotation {
-		  SID			  "8989"
-		  Name			  "Bus Area"
-		  Position		  [25, 475, 955, 697]
-		  InternalMargins	  [0, 0, 0, 0]
-		  FixedWidth		  on
-		  ForegroundColor	  "[0.901961, 0.901961, 1.000000]"
-		  BackgroundColor	  "[0.901961, 0.901961, 1.000000]"
-		  DropShadow		  on
-		  AnnotationType	  "area_annotation"
-		  ZOrder		  6
-		  FontSize		  12
-		}
-	      }
-	    }
-	    Block {
-	      BlockType		      From
-	      Name		      "From"
-	      SID		      "8990"
-	      Position		      [-60, 36, 55, 64]
-	      ZOrder		      12
-	      GotoTag		      "CMD_RA_TQ_SP"
-	    }
-	    Block {
-	      BlockType		      From
-	      Name		      "From1"
-	      SID		      "8991"
-	      Position		      [-60, 136, 85, 164]
-	      ZOrder		      13
-	      GotoTag		      "SYSE_VOLTAGE_HV"
-	    }
-	    Block {
-	      BlockType		      From
-	      Name		      "From2"
-	      SID		      "8992"
-	      Position		      [255, 343, 460, 377]
-	      ZOrder		      14
-	      GotoTag		      "CMD_RA_MECHANICAL_BRAKE"
-	    }
-	    Block {
-	      BlockType		      From
-	      Name		      "From3"
-	      SID		      "8993"
-	      Position		      [820, 181, 885, 209]
-	      ZOrder		      15
-	      GotoTag		      "PLA_N"
-	    }
-	    Block {
-	      BlockType		      From
-	      Name		      "From4"
-	      SID		      "8994"
-	      Position		      [745, 471, 845, 499]
-	      ZOrder		      24
-	      GotoTag		      "RA_TQ"
-	      Port {
-		PortNumber		1
-		Name			"RA_TQ"
-	      }
-	    }
-	    Block {
-	      BlockType		      From
-	      Name		      "From5"
-	      SID		      "8995"
-	      Position		      [745, 516, 860, 554]
-	      ZOrder		      25
-	      GotoTag		      "RA_TQ_MINMAX"
-	      Port {
-		PortNumber		1
-		Name			"RA_TQ_MINMAX"
-	      }
-	    }
-	    Block {
-	      BlockType		      From
-	      Name		      "From6"
-	      SID		      "8996"
-	      Position		      [745, 573, 860, 597]
-	      ZOrder		      26
-	      GotoTag		      "RA_EM_CURRENT"
-	      Port {
-		PortNumber		1
-		Name			"RA_EM_CURRENT"
-	      }
-	    }
-	    Block {
-	      BlockType		      From
-	      Name		      "From7"
-	      SID		      "8997"
-	      Position		      [745, 621, 850, 649]
-	      ZOrder		      27
-	      GotoTag		      "RA_N_EM"
-	      Port {
-		PortNumber		1
-		Name			"RA_N_EM"
-	      }
-	    }
-	    Block {
-	      BlockType		      From
-	      Name		      "From8"
-	      SID		      "8998"
-	      Position		      [745, 673, 860, 697]
-	      ZOrder		      28
-	      GotoTag		      "RA_PLA_F_BRAKE"
-	      Port {
-		PortNumber		1
-		Name			"RA_PLA_F_BRAKE"
-	      }
-	    }
-	    Block {
-	      BlockType		      From
-	      Name		      "From9"
-	      SID		      "8999"
-	      Position		      [-60, 88, 35, 112]
-	      ZOrder		      36
-	      GotoTag		      "RA_N_EM"
-	    }
-	    Block {
-	      BlockType		      Goto
-	      Name		      "Goto"
-	      SID		      "9000"
-	      Position		      [495, 472, 620, 498]
-	      ZOrder		      7
-	      GotoTag		      "CMD_RA_TQ_SP"
-	    }
-	    Block {
-	      BlockType		      Goto
-	      Name		      "Goto1"
-	      SID		      "9001"
-	      Position		      [495, 517, 620, 543]
-	      ZOrder		      9
-	      GotoTag		      "SYSE_VOLTAGE_HV"
-	    }
-	    Block {
-	      BlockType		      Goto
-	      Name		      "Goto2"
-	      SID		      "9002"
-	      Position		      [495, 564, 695, 586]
-	      ZOrder		      10
-	      GotoTag		      "CMD_RA_MECHANICAL_BRAKE"
-	    }
-	    Block {
-	      BlockType		      Goto
-	      Name		      "Goto3"
-	      SID		      "9003"
-	      Position		      [495, 607, 620, 633]
-	      ZOrder		      11
-	      GotoTag		      "PLA_N"
-	    }
-	    Block {
-	      BlockType		      Goto
-	      Name		      "Goto4"
-	      SID		      "9004"
-	      Position		      [1645, 72, 1730, 108]
-	      ZOrder		      18
-	      GotoTag		      "RA_TQ"
-	    }
-	    Block {
-	      BlockType		      Goto
-	      Name		      "Goto5"
-	      SID		      "9005"
-	      Position		      [1645, 112, 1770, 148]
-	      ZOrder		      19
-	      GotoTag		      "RA_TQ_MINMAX"
-	    }
-	    Block {
-	      BlockType		      Goto
-	      Name		      "Goto6"
-	      SID		      "9006"
-	      Position		      [750, 3, 870, 47]
-	      ZOrder		      20
-	      GotoTag		      "RA_EM_CURRENT"
-	    }
-	    Block {
-	      BlockType		      Goto
-	      Name		      "Goto7"
-	      SID		      "9007"
-	      Position		      [1490, 177, 1575, 213]
-	      ZOrder		      22
-	      GotoTag		      "RA_N_EM"
-	    }
-	    Block {
-	      BlockType		      Goto
-	      Name		      "Goto8"
-	      SID		      "9008"
-	      Position		      [950, 342, 1100, 378]
-	      ZOrder		      23
-	      GotoTag		      "RA_PLA_F_BRAKE"
-	    }
-	    Block {
-	      BlockType		      SubSystem
-	      Name		      "RA_TQ_to_F_BRAKE"
-	      SID		      "9009"
-	      Ports		      [1, 1]
-	      Position		      [560, 314, 825, 406]
-	      ZOrder		      4
-	      RequestExecContextInheritance off
-	      System {
-		Name			"RA_TQ_to_F_BRAKE"
-		Location		[-8, -8, 1374, 736]
-		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
-		ModelBrowserVisibility	off
-		ModelBrowserWidth	200
-		ScreenColor		"white"
-		PaperOrientation	"landscape"
-		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
-		TiledPageScale		1
-		ShowPageBoundaries	off
-		ZoomFactor		"100"
-		Block {
-		  BlockType		  Inport
-		  Name			  "CMD_RA_MECANICAL_BRAKE"
-		  SID			  "9010"
-		  Position		  [65, 43, 95, 57]
-		  ZOrder		  3
-		  IconDisplay		  "Port number"
-		}
-		Block {
-		  BlockType		  Gain
-		  Name			  "Gain"
-		  SID			  "9011"
-		  Position		  [205, 20, 345, 80]
-		  ZOrder		  2
-		  Gain			  "1/pla_wheel_radius"
-		  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
-		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-		  SaturateOnIntegerOverflow off
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "RA_PLA_F_BRAKE"
-		  SID			  "9012"
-		  Position		  [530, 43, 560, 57]
-		  ZOrder		  4
-		  NamePlacement		  "alternate"
-		  IconDisplay		  "Port number"
-		}
-		Line {
-		  ZOrder		  1
-		  SrcBlock		  "CMD_RA_MECANICAL_BRAKE"
-		  SrcPort		  1
-		  DstBlock		  "Gain"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  2
-		  SrcBlock		  "Gain"
-		  SrcPort		  1
-		  DstBlock		  "RA_PLA_F_BRAKE"
-		  DstPort		  1
-		}
-	      }
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Output_Bus_Rear_Axle"
-	      SID		      "9013"
-	      Position		      [1080, 578, 1110, 592]
-	      ZOrder		      17
-	      IconDisplay	      "Port number"
-	    }
-	    Line {
-	      ZOrder		      1
-	      Labels		      [0, 0]
-	      SrcBlock		      "Bus\nCreator"
-	      SrcPort		      1
-	      DstBlock		      "Goto5"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "RA_TQ_&_MINMAX_ME"
-	      ZOrder		      2
-	      Labels		      [1, 0]
-	      SrcBlock		      "Bus\nCreator3"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator2"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      3
-	      SrcBlock		      "Demux"
-	      SrcPort		      1
-	      DstBlock		      "Goto4"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "RA_TQ_MAX"
-	      ZOrder		      4
-	      Labels		      [0, 0]
-	      SrcBlock		      "Demux"
-	      SrcPort		      3
-	      DstBlock		      "Bus\nCreator"
-	      DstPort		      2
-	    }
-	    Line {
-	      Name		      "RA_TQ_MIN"
-	      ZOrder		      5
-	      Labels		      [0, 0]
-	      SrcBlock		      "Demux"
-	      SrcPort		      2
-	      DstBlock		      "Bus\nCreator"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      6
-	      SrcBlock		      "RA_TQ_to_F_BRAKE"
-	      SrcPort		      1
-	      DstBlock		      "Goto8"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "IB_RA"
-	      ZOrder		      7
-	      Labels		      [1, 0]
-	      SrcBlock		      "Inuput_Bus_Rear_Axle\n"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nSelector"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "<CMD_RA_TQ_SP>"
-	      ZOrder		      8
-	      Labels		      [0, 0]
-	      SrcBlock		      "Bus\nSelector"
-	      SrcPort		      1
-	      DstBlock		      "Goto"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "<SYSE_VOLTAGE_HV>"
-	      ZOrder		      9
-	      Labels		      [0, 0]
-	      SrcBlock		      "Bus\nSelector"
-	      SrcPort		      2
-	      DstBlock		      "Goto1"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "<CMD_RA_MECHANICAL_BRAKE>"
-	      ZOrder		      10
-	      Labels		      [0, 0]
-	      SrcBlock		      "Bus\nSelector"
-	      SrcPort		      3
-	      DstBlock		      "Goto2"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "<PLA_N>"
-	      ZOrder		      11
-	      Labels		      [0, 0]
-	      SrcBlock		      "Bus\nSelector"
-	      SrcPort		      4
-	      DstBlock		      "Goto3"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      12
-	      SrcBlock		      "From2"
-	      SrcPort		      1
-	      DstBlock		      "RA_TQ_to_F_BRAKE"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      13
-	      SrcBlock		      "From3"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator2"
-	      DstPort		      2
-	    }
-	    Line {
-	      Name		      "OB_RA"
-	      ZOrder		      14
-	      Labels		      [0, 1]
-	      SrcBlock		      "Bus\nCreator1"
-	      SrcPort		      1
-	      DstBlock		      "Output_Bus_Rear_Axle"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "RA_TQ"
-	      ZOrder		      15
-	      Labels		      [1, 1]
-	      SrcBlock		      "From4"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator1"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "RA_TQ_MINMAX"
-	      ZOrder		      16
-	      Labels		      [1, 1]
-	      SrcBlock		      "From5"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator1"
-	      DstPort		      2
-	    }
-	    Line {
-	      Name		      "RA_EM_CURRENT"
-	      ZOrder		      17
-	      Labels		      [1, 1]
-	      SrcBlock		      "From6"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator1"
-	      DstPort		      3
-	    }
-	    Line {
-	      Name		      "RA_N_EM"
-	      ZOrder		      18
-	      Labels		      [1, 1]
-	      SrcBlock		      "From7"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator1"
-	      DstPort		      4
-	    }
-	    Line {
-	      Name		      "RA_PLA_F_BRAKE"
-	      ZOrder		      19
-	      Labels		      [1, 1]
-	      SrcBlock		      "From8"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator1"
-	      DstPort		      5
-	    }
-	    Line {
-	      Name		      "OB_DIFF"
-	      ZOrder		      20
-	      Labels		      [0, 0]
-	      SrcBlock		      "Differential"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nSelector1"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "<RA_N_EM>"
-	      ZOrder		      21
-	      Labels		      [0, 0]
-	      SrcBlock		      "Bus\nSelector1"
-	      SrcPort		      2
-	      DstBlock		      "Goto7"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "<RA_TQ_&_MINMAX>"
-	      ZOrder		      22
-	      Labels		      [0, 0]
-	      SrcBlock		      "Bus\nSelector1"
-	      SrcPort		      1
-	      DstBlock		      "Demux"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "IB_DIFF"
-	      ZOrder		      23
-	      Labels		      [1, 1]
-	      SrcBlock		      "Bus\nCreator2"
-	      SrcPort		      1
-	      DstBlock		      "Differential"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "OB_EM"
-	      ZOrder		      24
-	      Labels		      [0, 0]
-	      SrcBlock		      "Electrical machine"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nSelector2"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "<RA_EM_CURRENT>"
-	      ZOrder		      25
-	      Labels		      [0, 0]
-	      SrcBlock		      "Bus\nSelector2"
-	      SrcPort		      1
-	      Points		      [14, 0; 0, -20]
-	      DstBlock		      "Goto6"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "<RA_TQ_ME>"
-	      ZOrder		      26
-	      Labels		      [0, 0]
-	      SrcBlock		      "Bus\nSelector2"
-	      SrcPort		      2
-	      DstBlock		      "Bus\nCreator3"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "<RA_TQ_MIN_ME>"
-	      ZOrder		      27
-	      Labels		      [0, 0]
-	      SrcBlock		      "Bus\nSelector2"
-	      SrcPort		      3
-	      DstBlock		      "Bus\nCreator3"
-	      DstPort		      2
-	    }
-	    Line {
-	      Name		      "<RA_TQ_MAX_ME>"
-	      ZOrder		      28
-	      Labels		      [0, 0]
-	      SrcBlock		      "Bus\nSelector2"
-	      SrcPort		      4
-	      DstBlock		      "Bus\nCreator3"
-	      DstPort		      3
-	    }
-	    Line {
-	      ZOrder		      29
-	      SrcBlock		      "From1"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator4"
-	      DstPort		      3
-	    }
-	    Line {
-	      ZOrder		      30
-	      SrcBlock		      "From9"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator4"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      31
-	      SrcBlock		      "From"
-	      SrcPort		      1
-	      DstBlock		      "Bus\nCreator4"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "IB_EM"
-	      ZOrder		      32
-	      Labels		      [0, 0]
-	      SrcBlock		      "Bus\nCreator4"
-	      SrcPort		      1
-	      DstBlock		      "Electrical machine"
-	      DstPort		      1
-	    }
-	    Annotation {
-	      SID		      "9015"
-	      Name		      "BUS AREA\n"
-	      Position		      [200, 436, 1150, 724]
-	      InternalMargins	      [0, 0, 0, 0]
-	      FixedHeight	      on
-	      FixedWidth	      on
-	      ForegroundColor	      "[0.901961, 0.901961, 1.000000]"
-	      BackgroundColor	      "[0.901961, 0.901961, 1.000000]"
-	      DropShadow	      on
-	      AnnotationType	      "area_annotation"
-	      ZOrder		      9
-	      FontSize		      12
-	    }
-	    Annotation {
-	      SID		      "9014"
-	      Position		      [219, 194, 221, 208]
-	      InternalMargins	      [0, 0, 0, 0]
-	      ZOrder		      -2
 	    }
 	  }
 	}
@@ -27499,7 +26895,7 @@ Model {
 	  BlockType		  From
 	  Name			  "[PLA_N]1"
 	  SID			  "8516"
-	  Position		  [1020, 458, 1205, 482]
+	  Position		  [1020, 498, 1205, 522]
 	  ZOrder		  400
 	  ForegroundColor	  "orange"
 	  ShowName		  off
@@ -27768,6 +27164,7 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "Front Axle"
 	  SrcPort		  1
+	  Points		  [15, 0; 0, 15]
 	  DstBlock		  "Bus\nSelector"
 	  DstPort		  1
 	}
@@ -27783,18 +27180,20 @@ Model {
 	Line {
 	  Name			  "<FA_TQ_MINMAX>"
 	  ZOrder		  362
-	  Labels		  [1, 1]
+	  Labels		  [2, 1]
 	  SrcBlock		  "Bus\nSelector"
 	  SrcPort		  2
+	  Points		  [88, 0; 0, -10]
 	  DstBlock		  "Goto6"
 	  DstPort		  1
 	}
 	Line {
 	  Name			  "<FA_TQ>"
 	  ZOrder		  363
-	  Labels		  [1, 0]
+	  Labels		  [3, 0]
 	  SrcBlock		  "Bus\nSelector"
 	  SrcPort		  3
+	  Points		  [25, 0; 0, -20]
 	  DstBlock		  "Goto11"
 	  DstPort		  1
 	}
@@ -27804,7 +27203,7 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "Bus\nSelector"
 	  SrcPort		  4
-	  Points		  [55, 0]
+	  Points		  [55, 0; 0, -30]
 	  Branch {
 	    ZOrder		    369
 	    Points		    [0, -25]
@@ -27821,9 +27220,10 @@ Model {
 	Line {
 	  Name			  "<FA_PLA_BRAKE>"
 	  ZOrder		  365
-	  Labels		  [1, 1]
+	  Labels		  [2, 1]
 	  SrcBlock		  "Bus\nSelector"
 	  SrcPort		  5
+	  Points		  [40, 0; 0, -40]
 	  DstBlock		  "Goto28"
 	  DstPort		  1
 	}
@@ -27834,106 +27234,8 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "Bus\nCreator"
 	  SrcPort		  1
+	  Points		  [31, 0; 0, -120]
 	  DstBlock		  "Front Axle"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "PLA_N"
-	  ZOrder		  373
-	  Labels		  [1, 1]
-	  SrcBlock		  "From2"
-	  SrcPort		  1
-	  DstBlock		  "Bus\nCreator1"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "CMD_RA_TQ_SP"
-	  ZOrder		  374
-	  Labels		  [1, 1]
-	  SrcBlock		  "From33"
-	  SrcPort		  1
-	  DstBlock		  "Bus\nCreator1"
-	  DstPort		  2
-	}
-	Line {
-	  Name			  "SYSE_VOLTAGE_HV"
-	  ZOrder		  375
-	  Labels		  [1, 1]
-	  SrcBlock		  "From32"
-	  SrcPort		  1
-	  DstBlock		  "Bus\nCreator1"
-	  DstPort		  3
-	}
-	Line {
-	  Name			  "CMD_RA_MECHANICAL_BRAKE"
-	  ZOrder		  376
-	  Labels		  [1, 1]
-	  SrcBlock		  "From34"
-	  SrcPort		  1
-	  DstBlock		  "Bus\nCreator1"
-	  DstPort		  4
-	}
-	Line {
-	  Name			  "IB_RA"
-	  ZOrder		  377
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nCreator1"
-	  SrcPort		  1
-	  DstBlock		  "Rear Axle1"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "OB_RA"
-	  ZOrder		  378
-	  Labels		  [0, 0]
-	  SrcBlock		  "Rear Axle1"
-	  SrcPort		  1
-	  DstBlock		  "Bus\nSelector1"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "<RA_EM_CURRENT>"
-	  ZOrder		  379
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  3
-	  DstBlock		  "Goto31"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "<RA_TQ_MINMAX>"
-	  ZOrder		  380
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  2
-	  DstBlock		  "Goto33"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "<RA_TQ>"
-	  ZOrder		  381
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  1
-	  DstBlock		  "Goto29"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "<RA_N_EM>"
-	  ZOrder		  382
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  4
-	  DstBlock		  "Goto30"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "<RA_PLA_F_BRAKE>"
-	  ZOrder		  383
-	  Labels		  [0, 0]
-	  SrcBlock		  "Bus\nSelector1"
-	  SrcPort		  5
-	  DstBlock		  "Goto32"
 	  DstPort		  1
 	}
 	Line {
@@ -27942,17 +27244,9 @@ Model {
 	  Labels		  [1, 1]
 	  SrcBlock		  "From10"
 	  SrcPort		  1
+	  Points		  [225, 0]
 	  DstBlock		  "Bus\nCreator2"
 	  DstPort		  1
-	}
-	Line {
-	  Name			  "RA_TQ"
-	  ZOrder		  396
-	  Labels		  [1, 1]
-	  SrcBlock		  "From11"
-	  SrcPort		  1
-	  DstBlock		  "Bus\nCreator2"
-	  DstPort		  2
 	}
 	Line {
 	  Name			  "FA_PLA_F_BRAKE"
@@ -27960,17 +27254,9 @@ Model {
 	  Labels		  [1, 1]
 	  SrcBlock		  "From16"
 	  SrcPort		  1
+	  Points		  [130, 0]
 	  DstBlock		  "Bus\nCreator2"
-	  DstPort		  3
-	}
-	Line {
-	  Name			  "RA_PLA_F_BRAKE"
-	  ZOrder		  398
-	  Labels		  [1, 1]
-	  SrcBlock		  "From31"
-	  SrcPort		  1
-	  DstBlock		  "Bus\nCreator2"
-	  DstPort		  4
+	  DstPort		  2
 	}
 	Line {
 	  Name			  "ENV_VECT"
@@ -27978,8 +27264,9 @@ Model {
 	  Labels		  [1, 1]
 	  SrcBlock		  "From6"
 	  SrcPort		  1
+	  Points		  [225, 0]
 	  DstBlock		  "Bus\nCreator2"
-	  DstPort		  5
+	  DstPort		  3
 	}
 	Line {
 	  Name			  "IB_PLA"
@@ -27987,6 +27274,7 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "Bus\nCreator2"
 	  SrcPort		  1
+	  Points		  [0, -10]
 	  DstBlock		  "Platform"
 	  DstPort		  1
 	}
@@ -28460,6 +27748,42 @@ Model {
 	    DstPort		    1
 	  }
 	}
+	Line {
+	  Name			  "PLA_N"
+	  ZOrder		  578
+	  Labels		  [0, 0]
+	  SrcBlock		  "From2"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  7
+	}
+	Line {
+	  Name			  "CMD_RA_TQ_SP"
+	  ZOrder		  579
+	  Labels		  [0, 0]
+	  SrcBlock		  "From33"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  8
+	}
+	Line {
+	  Name			  "SYSE_VOLTAGE_HV"
+	  ZOrder		  580
+	  Labels		  [0, 0]
+	  SrcBlock		  "From32"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  9
+	}
+	Line {
+	  Name			  "CMD_RA_MECHANICAL_BRAKE"
+	  ZOrder		  581
+	  Labels		  [0, 0]
+	  SrcBlock		  "From34"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  10
+	}
 	Annotation {
 	  SID			  "9183"
 	  Name			  "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html"
@@ -28529,7 +27853,7 @@ Model {
 	  BackgroundColor	  "[0.968627, 0.925490, 0.976471]"
 	  DropShadow		  on
 	  AnnotationType	  "area_annotation"
-	  ZOrder		  895
+	  ZOrder		  1003
 	  FontName		  "Arial"
 	  FontSize		  12
 	}
@@ -28545,7 +27869,7 @@ Model {
 	  BackgroundColor	  "[0.952941, 0.952941, 0.952941]"
 	  DropShadow		  on
 	  AnnotationType	  "area_annotation"
-	  ZOrder		  897
+	  ZOrder		  1005
 	  FontName		  "Arial"
 	  FontSize		  12
 	}
@@ -28561,7 +27885,7 @@ Model {
 	  BackgroundColor	  "[0.972549, 0.952941, 0.929412]"
 	  DropShadow		  on
 	  AnnotationType	  "area_annotation"
-	  ZOrder		  896
+	  ZOrder		  1004
 	  FontName		  "Arial"
 	  FontSize		  12
 	}
@@ -28578,7 +27902,7 @@ Model {
 	  BackgroundColor	  "[0.956863, 0.980392, 0.921569]"
 	  DropShadow		  on
 	  AnnotationType	  "area_annotation"
-	  ZOrder		  892
+	  ZOrder		  1000
 	  FontName		  "Arial"
 	  FontSize		  12
 	}
@@ -28595,7 +27919,7 @@ Model {
 	  BackgroundColor	  "[0.901961, 0.901961, 1.000000]"
 	  DropShadow		  on
 	  AnnotationType	  "area_annotation"
-	  ZOrder		  894
+	  ZOrder		  1002
 	  FontName		  "Arial"
 	  FontSize		  12
 	}
@@ -28611,7 +27935,7 @@ Model {
 	  BackgroundColor	  "[1.000000, 0.901961, 0.901961]"
 	  DropShadow		  on
 	  AnnotationType	  "area_annotation"
-	  ZOrder		  893
+	  ZOrder		  1001
 	  FontName		  "Arial"
 	  FontSize		  12
 	}
@@ -37496,7 +36820,7 @@ Stateflow {
     machine		    1
     name		    "HEV model/Command/Start_Stop/START//STOP 1"
     windowPosition	    [-8 -8 1936 1056]
-    viewLimits		    [351.555 1931.555 82.72 836.47]
+    viewLimits		    [73.444 1653.444 15.547 769.297]
     zoomFactor		    1.667
     transitionColor	    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
     transitionLabelColor    [0.3215686274509804 0.5450980392156862 0.7725490196078432]

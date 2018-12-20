@@ -3,7 +3,7 @@ clear all
 clc
 
 %% Constants loading
-
+PR_TQ_ICE = 0.7; %il va falloir mettre ça dans un des fichiers de definition de variables
 load('AxelSplitHEVv4_NEDC_18_06_15.mat')
 load('fa_differential_ratio.mat')
 load('fa_gearbox_ratio.mat')
